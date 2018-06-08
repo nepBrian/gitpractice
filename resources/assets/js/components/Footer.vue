@@ -1,6 +1,6 @@
 <template>
-    <div>
-
+    <div class="w-full bg-blue-dark h-48 flex justify-center items-center text-5xl text-white">
+        Footer
     </div>
 </template>
 
