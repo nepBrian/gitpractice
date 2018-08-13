@@ -874,11 +874,11 @@ button,
 }
 
 .bg-blue-dark {
-  background-color: #2779bd;
+  background-color: #314483;
 }
 
 .bg-blue {
-  background-color: #3490dc;
+  background-color: #4f5a80;
 }
 
 .bg-blue-light {
@@ -1166,11 +1166,11 @@ button,
 }
 
 .hover\:bg-blue-dark:hover {
-  background-color: #2779bd;
+  background-color: #314483;
 }
 
 .hover\:bg-blue:hover {
-  background-color: #3490dc;
+  background-color: #4f5a80;
 }
 
 .hover\:bg-blue-light:hover {
@@ -1522,11 +1522,11 @@ button,
 }
 
 .border-blue-dark {
-  border-color: #2779bd;
+  border-color: #314483;
 }
 
 .border-blue {
-  border-color: #3490dc;
+  border-color: #4f5a80;
 }
 
 .border-blue-light {
@@ -1814,11 +1814,11 @@ button,
 }
 
 .hover\:border-blue-dark:hover {
-  border-color: #2779bd;
+  border-color: #314483;
 }
 
 .hover\:border-blue:hover {
-  border-color: #3490dc;
+  border-color: #4f5a80;
 }
 
 .hover\:border-blue-light:hover {
@@ -3882,11 +3882,11 @@ button,
 }
 
 .text-blue-dark {
-  color: #2779bd;
+  color: #314483;
 }
 
 .text-blue {
-  color: #3490dc;
+  color: #4f5a80;
 }
 
 .text-blue-light {
@@ -4174,11 +4174,11 @@ button,
 }
 
 .hover\:text-blue-dark:hover {
-  color: #2779bd;
+  color: #314483;
 }
 
 .hover\:text-blue:hover {
-  color: #3490dc;
+  color: #4f5a80;
 }
 
 .hover\:text-blue-light:hover {
@@ -4311,6 +4311,14 @@ button,
 
 .text-5xl {
   font-size: 3rem;
+}
+
+.text-6xl {
+  font-size: 4rem;
+}
+
+.text-7xl {
+  font-size: 5rem;
 }
 
 .italic {
@@ -4637,13 +4645,80 @@ button,
   z-index: auto;
 }
 
-ul > li > a {
-  text-decoration: none;
-  color: #dae1e7;
+/*
+|-------------------------------------------------------------------------------
+| Heights
+|-------------------------------------------------------------------------------
+|*/
+
+.min-h-screen-20vh {
+  min-height: calc((100vh - 100px) - 20vh);
 }
 
-ul > li > a:hover {
-  color: #38c172;
+/*
+|-------------------------------------------------------------------------------
+| Text Shadows
+|-------------------------------------------------------------------------------
+|*/
+
+.text-shadow-lightest {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.text-shadow-lighter {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.text-shadow-light {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .4);
+}
+
+.text-shadow {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+}
+
+.text-shadow-dark {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.text-shadow-darker {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .8);
+}
+
+.text-shadow-darkest {
+  text-shadow: 0 1px 2px black;
+}
+
+.bg-overlay-black-light {
+  background-color: rgba(0, 0, 0, .4);
+  background-blend-mode: overlay;
+}
+
+.tm-headbar-top {
+  background-size: cover;
+  background-color: #37466c;
+  background: -webkit-gradient(linear, left top, left bottom, from(#132431), to(#2c4f73)) !important;
+  background: linear-gradient(#132431, #2c4f73) !important;
+  background-blend-mode: soft-light;
+  background-position: center center;
+}
+
+.heading-line > span {
+  position: relative;
+}
+
+.heading-line > ::before {
+  right: 100%;
+  margin-right: .6em;
+}
+
+.heading-line > ::after,
+.heading-line > ::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - (1px / 2));
+  width: 100px;
+  border-bottom: 1px solid #dee6ed;
 }
 
 @media (min-width: 576px) {
@@ -4859,11 +4934,11 @@ ul > li > a:hover {
   }
 
   .sm\:bg-blue-dark {
-    background-color: #2779bd;
+    background-color: #314483;
   }
 
   .sm\:bg-blue {
-    background-color: #3490dc;
+    background-color: #4f5a80;
   }
 
   .sm\:bg-blue-light {
@@ -5151,11 +5226,11 @@ ul > li > a:hover {
   }
 
   .sm\:hover\:bg-blue-dark:hover {
-    background-color: #2779bd;
+    background-color: #314483;
   }
 
   .sm\:hover\:bg-blue:hover {
-    background-color: #3490dc;
+    background-color: #4f5a80;
   }
 
   .sm\:hover\:bg-blue-light:hover {
@@ -5507,11 +5582,11 @@ ul > li > a:hover {
   }
 
   .sm\:border-blue-dark {
-    border-color: #2779bd;
+    border-color: #314483;
   }
 
   .sm\:border-blue {
-    border-color: #3490dc;
+    border-color: #4f5a80;
   }
 
   .sm\:border-blue-light {
@@ -5799,11 +5874,11 @@ ul > li > a:hover {
   }
 
   .sm\:hover\:border-blue-dark:hover {
-    border-color: #2779bd;
+    border-color: #314483;
   }
 
   .sm\:hover\:border-blue:hover {
-    border-color: #3490dc;
+    border-color: #4f5a80;
   }
 
   .sm\:hover\:border-blue-light:hover {
@@ -7859,11 +7934,11 @@ ul > li > a:hover {
   }
 
   .sm\:text-blue-dark {
-    color: #2779bd;
+    color: #314483;
   }
 
   .sm\:text-blue {
-    color: #3490dc;
+    color: #4f5a80;
   }
 
   .sm\:text-blue-light {
@@ -8151,11 +8226,11 @@ ul > li > a:hover {
   }
 
   .sm\:hover\:text-blue-dark:hover {
-    color: #2779bd;
+    color: #314483;
   }
 
   .sm\:hover\:text-blue:hover {
-    color: #3490dc;
+    color: #4f5a80;
   }
 
   .sm\:hover\:text-blue-light:hover {
@@ -8288,6 +8363,14 @@ ul > li > a:hover {
 
   .sm\:text-5xl {
     font-size: 3rem;
+  }
+
+  .sm\:text-6xl {
+    font-size: 4rem;
+  }
+
+  .sm\:text-7xl {
+    font-size: 5rem;
   }
 
   .sm\:italic {
@@ -8828,11 +8911,11 @@ ul > li > a:hover {
   }
 
   .md\:bg-blue-dark {
-    background-color: #2779bd;
+    background-color: #314483;
   }
 
   .md\:bg-blue {
-    background-color: #3490dc;
+    background-color: #4f5a80;
   }
 
   .md\:bg-blue-light {
@@ -9120,11 +9203,11 @@ ul > li > a:hover {
   }
 
   .md\:hover\:bg-blue-dark:hover {
-    background-color: #2779bd;
+    background-color: #314483;
   }
 
   .md\:hover\:bg-blue:hover {
-    background-color: #3490dc;
+    background-color: #4f5a80;
   }
 
   .md\:hover\:bg-blue-light:hover {
@@ -9476,11 +9559,11 @@ ul > li > a:hover {
   }
 
   .md\:border-blue-dark {
-    border-color: #2779bd;
+    border-color: #314483;
   }
 
   .md\:border-blue {
-    border-color: #3490dc;
+    border-color: #4f5a80;
   }
 
   .md\:border-blue-light {
@@ -9768,11 +9851,11 @@ ul > li > a:hover {
   }
 
   .md\:hover\:border-blue-dark:hover {
-    border-color: #2779bd;
+    border-color: #314483;
   }
 
   .md\:hover\:border-blue:hover {
-    border-color: #3490dc;
+    border-color: #4f5a80;
   }
 
   .md\:hover\:border-blue-light:hover {
@@ -11828,11 +11911,11 @@ ul > li > a:hover {
   }
 
   .md\:text-blue-dark {
-    color: #2779bd;
+    color: #314483;
   }
 
   .md\:text-blue {
-    color: #3490dc;
+    color: #4f5a80;
   }
 
   .md\:text-blue-light {
@@ -12120,11 +12203,11 @@ ul > li > a:hover {
   }
 
   .md\:hover\:text-blue-dark:hover {
-    color: #2779bd;
+    color: #314483;
   }
 
   .md\:hover\:text-blue:hover {
-    color: #3490dc;
+    color: #4f5a80;
   }
 
   .md\:hover\:text-blue-light:hover {
@@ -12257,6 +12340,14 @@ ul > li > a:hover {
 
   .md\:text-5xl {
     font-size: 3rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 4rem;
+  }
+
+  .md\:text-7xl {
+    font-size: 5rem;
   }
 
   .md\:italic {
@@ -12797,11 +12888,11 @@ ul > li > a:hover {
   }
 
   .lg\:bg-blue-dark {
-    background-color: #2779bd;
+    background-color: #314483;
   }
 
   .lg\:bg-blue {
-    background-color: #3490dc;
+    background-color: #4f5a80;
   }
 
   .lg\:bg-blue-light {
@@ -13089,11 +13180,11 @@ ul > li > a:hover {
   }
 
   .lg\:hover\:bg-blue-dark:hover {
-    background-color: #2779bd;
+    background-color: #314483;
   }
 
   .lg\:hover\:bg-blue:hover {
-    background-color: #3490dc;
+    background-color: #4f5a80;
   }
 
   .lg\:hover\:bg-blue-light:hover {
@@ -13445,11 +13536,11 @@ ul > li > a:hover {
   }
 
   .lg\:border-blue-dark {
-    border-color: #2779bd;
+    border-color: #314483;
   }
 
   .lg\:border-blue {
-    border-color: #3490dc;
+    border-color: #4f5a80;
   }
 
   .lg\:border-blue-light {
@@ -13737,11 +13828,11 @@ ul > li > a:hover {
   }
 
   .lg\:hover\:border-blue-dark:hover {
-    border-color: #2779bd;
+    border-color: #314483;
   }
 
   .lg\:hover\:border-blue:hover {
-    border-color: #3490dc;
+    border-color: #4f5a80;
   }
 
   .lg\:hover\:border-blue-light:hover {
@@ -15797,11 +15888,11 @@ ul > li > a:hover {
   }
 
   .lg\:text-blue-dark {
-    color: #2779bd;
+    color: #314483;
   }
 
   .lg\:text-blue {
-    color: #3490dc;
+    color: #4f5a80;
   }
 
   .lg\:text-blue-light {
@@ -16089,11 +16180,11 @@ ul > li > a:hover {
   }
 
   .lg\:hover\:text-blue-dark:hover {
-    color: #2779bd;
+    color: #314483;
   }
 
   .lg\:hover\:text-blue:hover {
-    color: #3490dc;
+    color: #4f5a80;
   }
 
   .lg\:hover\:text-blue-light:hover {
@@ -16226,6 +16317,14 @@ ul > li > a:hover {
 
   .lg\:text-5xl {
     font-size: 3rem;
+  }
+
+  .lg\:text-6xl {
+    font-size: 4rem;
+  }
+
+  .lg\:text-7xl {
+    font-size: 5rem;
   }
 
   .lg\:italic {
@@ -16766,11 +16865,11 @@ ul > li > a:hover {
   }
 
   .xl\:bg-blue-dark {
-    background-color: #2779bd;
+    background-color: #314483;
   }
 
   .xl\:bg-blue {
-    background-color: #3490dc;
+    background-color: #4f5a80;
   }
 
   .xl\:bg-blue-light {
@@ -17058,11 +17157,11 @@ ul > li > a:hover {
   }
 
   .xl\:hover\:bg-blue-dark:hover {
-    background-color: #2779bd;
+    background-color: #314483;
   }
 
   .xl\:hover\:bg-blue:hover {
-    background-color: #3490dc;
+    background-color: #4f5a80;
   }
 
   .xl\:hover\:bg-blue-light:hover {
@@ -17414,11 +17513,11 @@ ul > li > a:hover {
   }
 
   .xl\:border-blue-dark {
-    border-color: #2779bd;
+    border-color: #314483;
   }
 
   .xl\:border-blue {
-    border-color: #3490dc;
+    border-color: #4f5a80;
   }
 
   .xl\:border-blue-light {
@@ -17706,11 +17805,11 @@ ul > li > a:hover {
   }
 
   .xl\:hover\:border-blue-dark:hover {
-    border-color: #2779bd;
+    border-color: #314483;
   }
 
   .xl\:hover\:border-blue:hover {
-    border-color: #3490dc;
+    border-color: #4f5a80;
   }
 
   .xl\:hover\:border-blue-light:hover {
@@ -19766,11 +19865,11 @@ ul > li > a:hover {
   }
 
   .xl\:text-blue-dark {
-    color: #2779bd;
+    color: #314483;
   }
 
   .xl\:text-blue {
-    color: #3490dc;
+    color: #4f5a80;
   }
 
   .xl\:text-blue-light {
@@ -20058,11 +20157,11 @@ ul > li > a:hover {
   }
 
   .xl\:hover\:text-blue-dark:hover {
-    color: #2779bd;
+    color: #314483;
   }
 
   .xl\:hover\:text-blue:hover {
-    color: #3490dc;
+    color: #4f5a80;
   }
 
   .xl\:hover\:text-blue-light:hover {
@@ -20195,6 +20294,14 @@ ul > li > a:hover {
 
   .xl\:text-5xl {
     font-size: 3rem;
+  }
+
+  .xl\:text-6xl {
+    font-size: 4rem;
+  }
+
+  .xl\:text-7xl {
+    font-size: 5rem;
   }
 
   .xl\:italic {

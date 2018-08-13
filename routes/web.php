@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
+// find out how to transfer .active class to navbar
+
+route::get('/', function () {
     return view('welcome');
+});
+route::get('/contact', function () {
+    return view('contact');
 });

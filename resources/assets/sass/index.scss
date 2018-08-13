@@ -1,10 +1,32 @@
 @tailwind preflight;
 @tailwind components;
 @tailwind utilities;
+@import "custom-utilities";
 
-ul > li > a {
-  @apply .no-underline .text-grey-light
+.bg-overlay-black-light {
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: overlay;
 }
-ul > li > a:hover {
-  @apply .text-green
+
+.tm-headbar-top {
+    background-size: cover;
+    background-color: #37466c;
+    background: linear-gradient(#132431,#2c4f73)!important;
+    background-blend-mode: soft-light;
+    background-position: center center;
+}
+
+.heading-line > span {
+    position: relative;
+}
+.heading-line > ::before {
+    right: 100%;
+    margin-right: .6em;
+}
+.heading-line>::after, .heading-line>::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - (1px / 2));
+    width: 100px;
+    border-bottom: 1px solid #dee6ed;
 }

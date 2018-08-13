@@ -8,17 +8,26 @@
         <title>Tailwind</title>
 
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     </head>
     <body>
 
         <div id="app">
             <header-component></header-component>
-            <navbar-component></navbar-component>
             <maincontent-component></maincontent-component>
             <footer-component></footer-component>
         </div>
 
+        <script type="text/x-template" id="dropdown-link-template">
+          <div class="relative">
+            <div role="button" class="inline-block select-none" @click="open = !open">
+              <slot name="link"></slot>
+            </div>
+            <div class="absolute pin-r w-full mt-2" v-show="open">
+              <slot name="dropdown"></slot>
+            </div>
+          </div>
+        </script>
         <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>
