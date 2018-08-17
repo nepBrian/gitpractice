@@ -13,9 +13,11 @@
 
 // find out how to transfer .active class to navbar
 
-route::get('/', function () {
-    return view('welcome');
-});
-route::get('/contact', function () {
-    return view('contact');
-});
+// route::get('/', function () {
+//     return view('welcome');
+// });
+// route::get('/contact', function () {
+//     return view('contact');
+// });
+
+Route::get('/{any}', 'SpaController@index')->where('any', '.*');
