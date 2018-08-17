@@ -22,6 +22,7 @@ require('./bootstrap');
 Vue.component('header-component', require('./components/Header.vue'));
 Vue.component('maincontent-component', require('./components/Maincontent.vue'));
 Vue.component('footer-component', require('./components/TheFooter.vue'));
+
 Vue.component('dropdown-link', {
   template: '#dropdown-link-template',
   data() {
