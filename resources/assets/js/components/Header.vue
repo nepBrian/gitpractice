@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div name="header-mobile" class="block xl:hidden">
+        <div name="header-mobile" class="block lg:hidden">
             <nav class="bg-white-lightest flex items-center justify-center relative">
                 <div class="flex items-center flex-wrap">
                     <a href="#" class="no-underline flex justify-center items-center px-4"><img class="h-24" src="../../images/StoughtonPRA_BadgeLogo-tiny.png" alt="SPRA Badge"></a>
@@ -10,10 +10,10 @@
                 </div>
             </nav>
         </div>
-        <div name="header" class="bg-blue-darkest hidden xl:block">
+        <div name="header" class="bg-blue-darkest hidden lg:block">
             <div class="tm-headbar-top py-4">
                 <div class="container flex items-center m-auto">
-                    <a href="/"><img class="invisible lg:h-32 md:h-24 md:visible" src="../../images/StoughtonPRA_BadgeLogo.png" alt="SPRA Badge name"></a>
+                    <a href="/"><img class="invisible md:h-32 sm:h-24 sm:visible" src="../../images/StoughtonPRA_BadgeLogo.png" alt="SPRA Badge name"></a>
                     <div class="ml-auto">
                         <div class="flex items-center flex-col">
                             <div class="flex justify-end w-full mb-6">

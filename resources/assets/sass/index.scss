@@ -30,3 +30,7 @@
     width: 100px;
     border-bottom: 1px solid #dee6ed;
 }
+
+.uk-card {
+    @apply relative transition-easy rounded-sm
+}

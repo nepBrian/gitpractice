@@ -14461,97 +14461,101 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "hidden xl:block" }, [
+  return _c("div", { staticClass: "hidden lg:block" }, [
     _c(
-      "nav",
+      "ul",
       {
         staticClass:
-          "flex items-center bg-blue-lightest p-6 font-sans antialiased"
+          "list-reset flex justify-center items-center bg-blue-lightest uppercase tracking-wide font-semibold py-10 lg:text-md"
       },
       [
         _vm._m(0),
         _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "flex items-center" },
-          [
-            _c("dropdown-link", [
+        _c("dropdown-link", [
+          _c(
+            "li",
+            {
+              staticClass:
+                "pl-10 appearance-none flex items-center inline-block text-blue hover:text-blue-dark font-medium",
+              attrs: { slot: "link" },
+              slot: "link"
+            },
+            [
+              _c("span", { staticClass: "mr-1 font-semibold" }, [
+                _vm._v("About")
+              ]),
+              _vm._v(" "),
               _c(
-                "span",
+                "svg",
                 {
-                  staticClass:
-                    "appearance-none flex items-center inline-block text-blue hover:text-blue-dark font-medium",
-                  attrs: { slot: "link" },
-                  slot: "link"
+                  staticClass: "h-4 w-4",
+                  attrs: {
+                    xmlns: "http://www.w3.org/2000/svg",
+                    viewBox: "0 0 20 20"
+                  }
                 },
                 [
-                  _c("span", { staticClass: "mr-1" }, [_vm._v("Tailwind CSS")]),
-                  _vm._v(" "),
-                  _c(
-                    "svg",
-                    {
-                      staticClass: "h-4 w-4",
-                      attrs: {
-                        xmlns: "http://www.w3.org/2000/svg",
-                        viewBox: "0 0 20 20"
-                      }
-                    },
-                    [
-                      _c("path", {
-                        attrs: {
-                          d:
-                            "M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                        }
-                      })
-                    ]
-                  )
+                  _c("path", {
+                    attrs: {
+                      d:
+                        "M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                    }
+                  })
                 ]
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "bg-white shadow rounded border overflow-hidden",
+              attrs: { slot: "dropdown" },
+              slot: "dropdown"
+            },
+            [
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "no-underline block px-4 py-3 border-b text-grey-darkest bg-white hover:text-white hover:bg-blue",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Tickets")]
               ),
               _vm._v(" "),
               _c(
-                "div",
+                "a",
                 {
-                  staticClass: "bg-white shadow rounded border overflow-hidden",
-                  attrs: { slot: "dropdown" },
-                  slot: "dropdown"
+                  staticClass:
+                    "no-underline block px-4 py-3 border-b text-grey-darkest bg-white hover:text-white hover:bg-blue",
+                  attrs: { href: "#" }
                 },
-                [
-                  _c(
-                    "a",
-                    {
-                      staticClass:
-                        "no-underline block px-4 py-3 border-b text-grey-darkest bg-white hover:text-white hover:bg-blue",
-                      attrs: { href: "#" }
-                    },
-                    [_vm._v("Tickets")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass:
-                        "no-underline block px-4 py-3 border-b text-grey-darkest bg-white hover:text-white hover:bg-blue",
-                      attrs: { href: "#" }
-                    },
-                    [_vm._v("Reports")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass:
-                        "no-underline block px-4 py-3 border-b text-grey-darkest bg-white hover:text-white hover:bg-blue",
-                      attrs: { href: "#" }
-                    },
-                    [_vm._v("Manage")]
-                  )
-                ]
+                [_vm._v("Reports")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "no-underline block px-4 py-3 border-b text-grey-darkest bg-white hover:text-white hover:bg-blue",
+                  attrs: { href: "#" }
+                },
+                [_vm._v("Manage")]
               )
-            ])
-          ],
-          1
-        )
-      ]
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _vm._m(3),
+        _vm._v(" "),
+        _vm._m(4)
+      ],
+      1
     )
   ])
 }
@@ -14560,15 +14564,79 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "flex items-center flex-no-shrink text-blue mr-6" },
-      [
-        _c("span", { staticClass: "font-bold italic text-xl tracking-tight" }, [
-          _vm._v("Stoughton PRA")
-        ])
-      ]
-    )
+    return _c("li", { staticClass: "pl-10" }, [
+      _c(
+        "a",
+        {
+          staticClass: "text-blue hover:text-blue-dark no-underline",
+          attrs: { href: "/" }
+        },
+        [_vm._v("Home")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "pl-10" }, [
+      _c(
+        "a",
+        {
+          staticClass: "text-blue hover:text-blue-dark no-underline",
+          attrs: { href: "#" }
+        },
+        [_vm._v("News")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "pl-10" }, [
+      _c(
+        "a",
+        {
+          staticClass: "text-blue hover:text-blue-dark no-underline",
+          attrs: { href: "#" }
+        },
+        [_vm._v("Supporters")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "pl-10" }, [
+      _c(
+        "a",
+        {
+          staticClass: "text-blue hover:text-blue-dark no-underline",
+          attrs: { href: "contact" }
+        },
+        [_vm._v("Contact")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "pl-10" }, [
+      _c(
+        "a",
+        {
+          staticClass: "text-blue hover:text-blue-dark no-underline",
+          attrs: {
+            target: "_blank",
+            href: "https://www.nepconnect.review/login"
+          }
+        },
+        [_vm._v("Login")]
+      )
+    ])
   }
 ]
 render._withStripped = true
@@ -14594,7 +14662,7 @@ var render = function() {
     _c(
       "div",
       {
-        staticClass: "bg-blue-darkest hidden xl:block",
+        staticClass: "bg-blue-darkest hidden lg:block",
         attrs: { name: "header" }
       },
       [_vm._m(1), _vm._v(" "), _c("navbar-component")],
@@ -14609,7 +14677,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "block xl:hidden", attrs: { name: "header-mobile" } },
+      { staticClass: "block lg:hidden", attrs: { name: "header-mobile" } },
       [
         _c(
           "nav",
@@ -14662,7 +14730,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "container flex items-center m-auto" }, [
         _c("a", { attrs: { href: "/" } }, [
           _c("img", {
-            staticClass: "invisible lg:h-32 md:h-24 md:visible",
+            staticClass: "invisible md:h-32 sm:h-24 sm:visible",
             attrs: {
               src: __webpack_require__(22),
               alt: "SPRA Badge name"
@@ -14809,7 +14877,7 @@ var staticRenderFns = [
                   "h2",
                   {
                     staticClass:
-                      "text-xl xl:text-3xl text-shadow-light heading-line"
+                      "text-xl lg:text-3xl text-shadow-light heading-line"
                   },
                   [_c("span", [_vm._v("DEDICATION AND COMMITMENT")])]
                 ),
@@ -14818,7 +14886,7 @@ var staticRenderFns = [
                   "h1",
                   {
                     staticClass:
-                      "text-4xl xl:text-6xl text-bold my-8 text-shadow-light"
+                      "text-4xl lg:text-6xl text-bold my-10 text-shadow-light"
                   },
                   [_vm._v("STOUGHTON PRA")]
                 ),
@@ -14827,7 +14895,7 @@ var staticRenderFns = [
                   "h3",
                   {
                     staticClass:
-                      "text-1xl xl:text-3xl font-hairline italic text-shadow-light heading-line"
+                      "text-1xl lg:text-3xl font-hairline italic text-shadow-light heading-line"
                   },
                   [_c("span", [_vm._v("BRAVERY AND SERVICE")])]
                 )
@@ -14835,7 +14903,78 @@ var staticRenderFns = [
             )
           ])
         ]
-      )
+      ),
+      _vm._v(" "),
+      _c("section", { staticClass: "bg-grey-lightest py-16" }, [
+        _c("div", { staticClass: "container m-auto px-10" }, [
+          _c("div", { staticClass: "-ml-10 flex flex-wrap" }, [
+            _c("div", { staticClass: "flex-1 w-full pl-10" }, [
+              _c("div", {
+                staticClass:
+                  "uk-card bg-grey-light h-64 bg-cover bg-center bg-no-repeat",
+                staticStyle: {
+                  "background-image":
+                    "url('https://stoughtonpolicerelief.org/templates/yootheme/cache/SPDMotorcycle-0374845a.jpeg')"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "flex-1 w-full pl-10" }, [
+              _c("div", { staticClass: "uk-card p-8 bg-grey-light" }, [
+                _c("h6", { staticClass: "text-md uppercase mb-4" }, [
+                  _vm._v("About the SPRA")
+                ]),
+                _vm._v(" "),
+                _c("h3", { staticClass: "text-3xl font-hairline" }, [
+                  _vm._v("Our Mission")
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "mt-4 mb-8 font-light" }, [
+                  _vm._v(
+                    "The Stoughton Police Relief Association consists of 60 sworn officers and civilian personnel whom have taken an oath to maintain law and order for our citizens, and represent the finest element of our community."
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass:
+                      "bg-blue-light hover:bg-blue text-white font-bold py-2 px-4 rounded-full"
+                  },
+                  [_vm._v("Read More")]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "flex-1 w-full pl-10" }, [
+              _c("div", { staticClass: "uk-card p-8 bg-grey-light" }, [
+                _c("h6", { staticClass: "text-md uppercase mb-4" }, [
+                  _vm._v("Leadership")
+                ]),
+                _vm._v(" "),
+                _c("h3", { staticClass: "text-3xl font-hairline" }, [
+                  _vm._v("President's Message")
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "mt-4 mb-8 font-light" }, [
+                  _vm._v(
+                    "As President of the Stoughton Police Relief Association, and on behalf of our entire membership, thank you for your ongoing support. We are fortunate to be part of a close-knit community that cares, which makes our outreach even more impactful."
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass:
+                      "bg-blue-light hover:bg-blue text-white font-bold py-2 px-4 rounded-full"
+                  },
+                  [_vm._v("Read More")]
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
     ])
   }
 ]
@@ -14907,7 +15046,7 @@ var render = function() {
     "div",
     {
       staticClass:
-        "w-full bg-blue-dark h-48 flex justify-center items-center text-5xl text-white"
+        "w-full bg-blue-dark sm:bg-green-dark md:bg-orange-dark lg:bg-red-dark xl:bg-black  h-48 flex justify-center items-center text-5xl text-white"
     },
     [_vm._v("\n    Footer\n")]
   )

@@ -20,7 +20,7 @@
 
         <script type="text/x-template" id="dropdown-link-template">
           <div class="relative">
-            <div role="button" class="inline-block select-none" v-on:click="open = !open">
+            <div role="button" class="inline-block select-none" @click="open = !open">
               <slot name="link"></slot>
             </div>
             <div class="absolute pin-r w-full mt-2" v-show="open">
