@@ -14010,15 +14010,7 @@ __webpack_require__(18);
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('header-component', __webpack_require__(41));
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('maincontent-component', __webpack_require__(48));
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('footer-component', __webpack_require__(50));
-
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('dropdown-link', {
-  template: '#dropdown-link-template',
-  data: function data() {
-    return {
-      open: false
-    };
-  }
-});
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('dropdown-link', __webpack_require__(57));
 
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
   el: '#app'
@@ -50506,18 +50498,20 @@ var staticRenderFns = [
       _c("section", { staticClass: "bg-grey-lightest py-16" }, [
         _c("div", { staticClass: "container m-auto px-10" }, [
           _c("div", { staticClass: "-ml-10 flex flex-wrap" }, [
-            _c("div", { staticClass: "flex-1 w-full pl-10" }, [
-              _c("div", {
-                staticClass:
-                  "uk-card bg-grey-light h-64 bg-cover bg-center bg-no-repeat",
-                staticStyle: {
-                  "background-image":
-                    "url('https://stoughtonpolicerelief.org/templates/yootheme/cache/SPDMotorcycle-0374845a.jpeg')"
-                }
-              })
+            _c("div", { staticClass: "flex flex-1 w-full pl-10" }, [
+              _c("div", { staticClass: "flex flex-auto flex-wrap" }, [
+                _c("div", {
+                  staticClass:
+                    "flex-auto uk-card bg-grey-light bg-cover bg-center bg-no-repeat",
+                  staticStyle: {
+                    "background-image":
+                      "url('https://stoughtonpolicerelief.org/templates/yootheme/cache/SPDMotorcycle-0374845a.jpeg')"
+                  }
+                })
+              ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "flex-1 w-full pl-10" }, [
+            _c("div", { staticClass: "flex flex-1 w-full pl-10" }, [
               _c("div", { staticClass: "uk-card p-8 bg-grey-light" }, [
                 _c("h6", { staticClass: "text-md uppercase mb-4" }, [
                   _vm._v("About the SPRA")
@@ -50527,11 +50521,15 @@ var staticRenderFns = [
                   _vm._v("Our Mission")
                 ]),
                 _vm._v(" "),
-                _c("p", { staticClass: "mt-4 mb-8 font-light" }, [
-                  _vm._v(
-                    "The Stoughton Police Relief Association consists of 60 sworn officers and civilian personnel whom have taken an oath to maintain law and order for our citizens, and represent the finest element of our community."
-                  )
-                ]),
+                _c(
+                  "p",
+                  { staticClass: "mt-4 mb-8 font-light leading-normal" },
+                  [
+                    _vm._v(
+                      "The Stoughton Police Relief Association consists of 60 sworn officers and civilian personnel whom have taken an oath to maintain law and order for our citizens, and represent the finest element of our community."
+                    )
+                  ]
+                ),
                 _vm._v(" "),
                 _c(
                   "button",
@@ -50544,7 +50542,7 @@ var staticRenderFns = [
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "flex-1 w-full pl-10" }, [
+            _c("div", { staticClass: "flex flex-1 w-full pl-10" }, [
               _c("div", { staticClass: "uk-card p-8 bg-grey-light" }, [
                 _c("h6", { staticClass: "text-md uppercase mb-4" }, [
                   _vm._v("Leadership")
@@ -50554,11 +50552,15 @@ var staticRenderFns = [
                   _vm._v("President's Message")
                 ]),
                 _vm._v(" "),
-                _c("p", { staticClass: "mt-4 mb-8 font-light" }, [
-                  _vm._v(
-                    "As President of the Stoughton Police Relief Association, and on behalf of our entire membership, thank you for your ongoing support. We are fortunate to be part of a close-knit community that cares, which makes our outreach even more impactful."
-                  )
-                ]),
+                _c(
+                  "p",
+                  { staticClass: "mt-4 mb-8 font-light leading-normal" },
+                  [
+                    _vm._v(
+                      "As President of the Stoughton Police Relief Association, and on behalf of our entire membership, thank you for your ongoing support. We are fortunate to be part of a close-knit community that cares, which makes our outreach even more impactful."
+                    )
+                  ]
+                ),
                 _vm._v(" "),
                 _c(
                   "button",
@@ -50664,6 +50666,135 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(58)
+/* template */
+var __vue_template__ = __webpack_require__(59)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/DropdownLink.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-e37d883c", Component.options)
+  } else {
+    hotAPI.reload("data-v-e37d883c", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 58 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      open: false
+    };
+  }
+});
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "relative" }, [
+    _c(
+      "div",
+      {
+        staticClass: "inline-block select-none",
+        attrs: { role: "button" },
+        on: {
+          click: function($event) {
+            _vm.open = !_vm.open
+          }
+        }
+      },
+      [_vm._t("link")],
+      2
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.open,
+            expression: "open"
+          }
+        ],
+        staticClass: "absolute pin-r w-full mt-2"
+      },
+      [_vm._t("dropdown")],
+      2
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-e37d883c", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);
