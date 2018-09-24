@@ -3,6 +3,23 @@
 @tailwind utilities;
 @import "custom-utilities";
 
+.cs-full-width {
+    @apply justify-center items-center flex py-10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .bg-overlay-black-light {
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: overlay;
@@ -32,5 +49,31 @@
 }
 
 .uk-card {
-    @apply relative transition-easy rounded-sm
+    @apply relative transition-easy rounded-sm;
+}
+.jumbo {
+    @apply text-4xl my-10 text-shadow-light;
+}
+.card-metatext {
+    @apply text-md uppercase mb-4;
+}
+.card-title {
+    @apply text-3xl font-hairline;
+}
+.card-description {
+    @apply mt-4 mb-8 font-light leading-normal;
+}
+.button {
+    @apply py-2 px-4 rounded-full;
+}
+.button-primary {
+    @apply bg-blue-light text-white;
+}
+.button-primary:hover {
+    @apply bg-blue
+}
+@screen lg {
+    .jumbo {
+        @apply text-6xl;
+    }
 }

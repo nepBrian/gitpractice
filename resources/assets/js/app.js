@@ -19,10 +19,13 @@ require('./bootstrap');
  * These are global components - able to use anywhere and even within each other
  */
 
-Vue.component('header-component', require('./components/Header.vue'));
-Vue.component('maincontent-component', require('./components/Maincontent.vue'));
+Vue.component('header-component', require('./components/TheHeader.vue'));
 Vue.component('footer-component', require('./components/TheFooter.vue'));
 Vue.component('dropdown-link', require('./components/DropdownLink'));
+Vue.component('homepage-jumbotron', require('./components/HomepageJumbotron'));
+Vue.component('info-card', require('./components/InfoCard'));
+Vue.component('full-section', require('./layoutcomponents/FullSection'));
+Vue.component('half-half', require('./layoutcomponents/HalfHalf'));
 
 const app = new Vue({
     el: '#app'

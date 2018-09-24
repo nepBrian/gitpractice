@@ -14,7 +14,7 @@
 // find out how to transfer .active class to navbar
 
 route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 route::get('/contact', function () {
     return view('contact');
