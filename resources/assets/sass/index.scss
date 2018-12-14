@@ -7,19 +7,6 @@
     @apply justify-center items-center flex py-10;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .bg-overlay-black-light {
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: overlay;
@@ -67,10 +54,10 @@
     @apply py-2 px-4 rounded-full;
 }
 .button-primary {
-    @apply bg-blue-light text-white;
+    @apply bg-blue text-white;
 }
 .button-primary:hover {
-    @apply bg-blue
+    @apply bg-blue-dark
 }
 @screen lg {
     .jumbo {
