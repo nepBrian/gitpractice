@@ -43,7 +43,7 @@
                 </div>
                 <div slot="rightContent" class="flex flex-1 w-full pl-10 my-4">
                     <div class="uk-card p-8 bg-grey-light">
-                        <h6 class="text-md uppercase mb-4">Mission</h6>
+                        <h6 class="text-md uppercase mb-4">Our Mission</h6>
                     </div>
                 </div>
             </half-half>
