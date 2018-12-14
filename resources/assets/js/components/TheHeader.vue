@@ -21,8 +21,8 @@
                                 <i class="fab fa-facebook-f mr-6 text-white text-3xl"></i>
                                 <i class="fab fa-youtube text-white text-3xl"></i>
                             </div>
-                            <a href="#" class="no-underline text-3xl text-white hover:underline">Join Our Mailing List</a>
-                            <span class="text-sm text-grey">"Stay Up To Date With Our Latest News"</span>
+                            <a href="#" class="no-underline text-3xl text-white hover:underline">Join Our Mailing List!</a>
+                            <span class="text-sm text-grey">"Stay Up To Date With Our Latest News!!!!"</span>
                         </div>
                     </div>
                 </div>
