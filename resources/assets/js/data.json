@@ -1,0 +1,43 @@
+{
+  "association": {
+    "fullName": "Stoughton Police Relief Association",
+    "partialName": "Stoughton PRA",
+    "acronym": "SPRA",
+    "url": "stoughtonpolicerelief.org",
+    "phone": "(781)-344-2424",
+    "email": "info@stoughtonpolicerelief.org",
+    "mobileLogo": "string",
+    "desktopLogo": "string",
+    "board": {
+        "president": {
+            "name": "Jennifer Sullivan",
+            "email": ""
+        },
+        "vicePresident": {
+            "name": "Robert Kuhn",
+            "email": ""
+        },
+        "treasurer": {
+            "name": "Robert Kuhn",
+            "email": ""
+        },
+        "secretary": {
+            "name": "Daniel McGowan",
+            "email": ""
+        }
+    },
+    "address": {
+      "street": "26 Rose St.",
+      "city": "Stoughton",
+      "state": "Massachusetts",
+      "stateAcronym": "MA",
+      "zip": "02072"
+    }
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/StoughtonPRA/",
+    "twitter": "https://twitter.com/PoliceRelief",
+    "youtube": "https://www.youtube.com/channel/UCJsL5-Jtktc_BVYLmuAvZDg/featured",
+    "instagram": ""
+  }
+}

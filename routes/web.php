@@ -19,3 +19,6 @@ route::get('/', function () {
 route::get('/contact', function () {
     return view('contact');
 });
+route::get('/components', function () {
+    return view('components');
+});

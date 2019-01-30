@@ -1,36 +1,63 @@
 <template>
-  <div class="hidden lg:block">
-    <ul class="list-reset flex justify-center items-center bg-blue-lightest uppercase tracking-wide font-semibold py-10 lg:text-md">
-      <li class="pl-10"><a class="text-blue hover:text-blue-dark no-underline" href="/">Home</a></li>
-      <dropdown-link>
-        <li slot="link" class="pl-10 appearance-none flex items-center inline-block text-blue hover:text-blue-dark font-medium">
-              <span class="mr-1 font-semibold">About</span>
-        <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-          <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-        </svg>
-        </li>
-        <div slot="dropdown" class="bg-white shadow rounded border overflow-hidden">
-          <a href="#" class="no-underline block px-4 py-3 border-b text-grey-darkest bg-white hover:text-white hover:bg-blue">Tickets</a>
-          <a href="#" class="no-underline block px-4 py-3 border-b text-grey-darkest bg-white hover:text-white hover:bg-blue">Reports</a>
-          <a href="#" class="no-underline block px-4 py-3 border-b text-grey-darkest bg-white hover:text-white hover:bg-blue">Manage</a>
-        </div>
-      </dropdown-link>
-      <li class="pl-10"><a class="text-blue hover:text-blue-dark no-underline" href="#">News</a></li>
-      <li class="pl-10"><a class="text-blue hover:text-blue-dark no-underline" href="#">Supporters</a></li>
-      <li class="pl-10"><a class="text-blue hover:text-blue-dark no-underline" href="contact">Contact</a></li>
-      <li class="pl-10"><a class="text-blue hover:text-blue-dark no-underline" target="_blank" href="https://www.nepconnect.review/login">Login</a></li>
+  <nav id="navbar" class="hidden lg:block">
+    <ul class="list-reset flex justify-center items-center bg-blue-lightest uppercase tracking-wide font-semibold py-8 lg:text-md">
+      <!-- <li class="pl-10"><a class="text-blue hover:text-blue-dark no-underline" href="/">Home</a></li> -->
+      <li class="pl-10"><a class="text-blue hover:text-blue-dark no-underline" href="#about">About</a></li>
+      <!-- <li class="pl-10"><a class="text-blue hover:text-blue-dark no-underline" href="#">News</a></li> -->
+      <li class="pl-10"><a class="text-blue hover:text-blue-dark no-underline" href="#board-members">Board Members</a></li>
+      <li class="pl-10"><a class="text-blue hover:text-blue-dark no-underline" href="#contact">Contact</a></li>
+      <!-- <li class="pl-10"><a class="text-blue hover:text-blue-dark no-underline" target="_blank" href="https://www.nepconnect.review/login">Login</a></li> -->
     </ul>
-<!--     <nav class="flex items-center bg-blue-lightest p-6 font-sans antialiased">
-      <div class="flex items-center flex-no-shrink text-blue mr-6">
-        <span class="font-bold italic text-xl tracking-tight">Stoughton PRA</span>
-      </div>
-      <div class="flex items-center">
-      </div>
-    </nav> -->
-  </div>
+  </nav>
 </template>
 
 <script>
+    import { association } from '../data.json'
 
-
+    export default {
+        created () {
+            // window.addEventListener('scroll', this.stickyNav);
+        },
+        data() {
+          return {
+            association: association
+            // nav: nav,
+            // topOfNav: topOfNav
+          }
+        },
+        methods: {
+            stickyNav() {
+                // const nav = document.querySelector('#navbar');
+                // let topOfNav = nav.offsetTop;
+                // console.log(window.scrollY, this.topOfNav);
+                // if (window.scrollY >= this.topOfNav) {
+                //   document.body.style.paddingTop = nav.offsetHeight + 'px';
+                //   document.body.classList.add('fixed-nav');
+                // } else {
+                //   document.body.classList.remove('fixed-nav');
+                //   document.body.style.paddingTop = 0;
+                // }
+            }
+        },
+        destroyed () {
+          // window.removeEventListener('scroll', this.handleScroll);
+        }
+    }
 </script>
+
+<style scoped>
+    body.fixed-nav nav {
+      position: fixed;
+      box-shadow:0 5px 0 rgba(0,0,0,0.1);
+    }
+
+    nav {
+      background:black;
+      top:0;
+      width: 100%;
+      transition:all 0.5s;
+      position: relative;
+      z-index: 1;
+    }
+
+</style>

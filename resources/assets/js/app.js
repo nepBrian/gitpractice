@@ -44,9 +44,10 @@ Vue.component('header-component', require('./components/TheHeader.vue'));
 Vue.component('footer-component', require('./components/TheFooter.vue'));
 Vue.component('dropdown-link', require('./components/DropdownLink'));
 Vue.component('homepage-jumbotron', require('./components/HomepageJumbotron'));
+Vue.component('about-component', require('./components/TheAbout'));
+Vue.component('board-component', require('./components/TheBoard'));
+Vue.component('contact-component', require('./components/TheContact'));
 Vue.component('info-card', require('./components/InfoCard'));
-Vue.component('full-section', require('./layoutcomponents/FullSection'));
-Vue.component('half-half', require('./layoutcomponents/HalfHalf'));
 
 const app = new Vue({
     el: '#app',

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import "custom-utilities";
+@import "variables";
 
 .cs-full-width {
     @apply justify-center items-center flex py-10;
@@ -39,7 +40,7 @@
     @apply relative transition-easy rounded-sm;
 }
 .jumbo {
-    @apply text-4xl my-10 text-shadow-light;
+    @apply text-4xl my-10 text-shadow-light uppercase;
 }
 .card-metatext {
     @apply text-md uppercase mb-4;

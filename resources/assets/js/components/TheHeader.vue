@@ -17,9 +17,9 @@
                     <div class="ml-auto">
                         <div class="flex items-center flex-col">
                             <div class="flex justify-end w-full mb-6">
-                                <i class="fab fa-twitter mr-6 text-white text-3xl"></i>
-                                <i class="fab fa-facebook-f mr-6 text-white text-3xl"></i>
-                                <i class="fab fa-youtube text-white text-3xl"></i>
+                                <a :href="social.twitter" target="_blank"><i class="fab fa-twitter mr-6 text-white text-3xl"></i></a>
+                                <a :href="social.facebook" target="_blank"><i class="fab fa-facebook-f mr-6 text-white text-3xl"></i></a>
+                                <a :href="social.youtube" target="_blank"><i class="fab fa-youtube text-white text-3xl"></i></a>
                             </div>
                             <a href="#" class="no-underline text-3xl text-white hover:underline">Join Our Mailing List!</a>
                             <span class="text-sm text-grey">"Stay Up To Date With Our Latest News!!!!"</span>
@@ -34,10 +34,16 @@
 
 <script>
     import NavbarComponent from './TheNavbar.vue'
+    import { social } from '../data.json'
 
     export default {
         components: {
             NavbarComponent
+        },
+        data() {
+            return {
+                social
+            }
         }
     }
 </script>
