@@ -689,6 +689,10 @@ button,
   background-color: transparent;
 }
 
+.bg-primary {
+  background-color: #5872b5;
+}
+
 .bg-black {
   background-color: #22292f;
 }
@@ -979,6 +983,10 @@ button,
 
 .hover\:bg-transparent:hover {
   background-color: transparent;
+}
+
+.hover\:bg-primary:hover {
+  background-color: #5872b5;
 }
 
 .hover\:bg-black:hover {
@@ -1337,6 +1345,10 @@ button,
   border-color: transparent;
 }
 
+.border-primary {
+  border-color: #5872b5;
+}
+
 .border-black {
   border-color: #22292f;
 }
@@ -1627,6 +1639,10 @@ button,
 
 .hover\:border-transparent:hover {
   border-color: transparent;
+}
+
+.hover\:border-primary:hover {
+  border-color: #5872b5;
 }
 
 .hover\:border-black:hover {
@@ -3959,6 +3975,10 @@ button,
   color: transparent;
 }
 
+.text-primary {
+  color: #5872b5;
+}
+
 .text-black {
   color: #22292f;
 }
@@ -4249,6 +4269,10 @@ button,
 
 .hover\:text-transparent:hover {
   color: transparent;
+}
+
+.hover\:text-primary:hover {
+  color: #5872b5;
 }
 
 .hover\:text-black:hover {
@@ -4911,6 +4935,60 @@ button,
   z-index: auto;
 }
 
+.bg-gradient-primary {
+  background-image: linear-gradient(30deg, #5872b5, #38c172);
+}
+
+.bg-gradient-dark {
+  background-image: linear-gradient(30deg, #de751f, #f66d9b);
+}
+
+.bg-gradient-light {
+  background-image: -webkit-gradient(linear, left top, right top, from(#51d88a), to(#4dc0b5));
+  background-image: linear-gradient(to right, #51d88a, #4dc0b5);
+}
+
+.bg-gradient {
+  background-image: -webkit-gradient(linear, left top, right top, from(#40e0d0), color-stop(#ff8c00), to(#ff0080));
+  background-image: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+}
+
+.bg-relay {
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#3a1c71), color-stop(#d76d77), to(#ffaf7b));
+  background-image: linear-gradient(to top left, #3a1c71, #d76d77, #ffaf7b);
+}
+
+.bg-mono-circle {
+  background-image: radial-gradient(circle, #ccc, #000);
+}
+
+.hover\:bg-gradient-primary:hover {
+  background-image: linear-gradient(30deg, #5872b5, #38c172);
+}
+
+.hover\:bg-gradient-dark:hover {
+  background-image: linear-gradient(30deg, #de751f, #f66d9b);
+}
+
+.hover\:bg-gradient-light:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#51d88a), to(#4dc0b5));
+  background-image: linear-gradient(to right, #51d88a, #4dc0b5);
+}
+
+.hover\:bg-gradient:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#40e0d0), color-stop(#ff8c00), to(#ff0080));
+  background-image: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+}
+
+.hover\:bg-relay:hover {
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#3a1c71), color-stop(#d76d77), to(#ffaf7b));
+  background-image: linear-gradient(to top left, #3a1c71, #d76d77, #ffaf7b);
+}
+
+.hover\:bg-mono-circle:hover {
+  background-image: radial-gradient(circle, #ccc, #000);
+}
+
 /*
 |-------------------------------------------------------------------------------
 | Heights
@@ -4982,6 +5060,18 @@ button,
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
+}
+
+.card {
+  padding: 2.5rem;
+  margin: auto;
+  border-radius: .125rem;
+}
+
+.card-primary {
+  background-color: #5872b5;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
 }
 
 .cs-full-width {
@@ -5112,6 +5202,10 @@ button,
 
   .sm\:bg-transparent {
     background-color: transparent;
+  }
+
+  .sm\:bg-primary {
+    background-color: #5872b5;
   }
 
   .sm\:bg-black {
@@ -5404,6 +5498,10 @@ button,
 
   .sm\:hover\:bg-transparent:hover {
     background-color: transparent;
+  }
+
+  .sm\:hover\:bg-primary:hover {
+    background-color: #5872b5;
   }
 
   .sm\:hover\:bg-black:hover {
@@ -5762,6 +5860,10 @@ button,
     border-color: transparent;
   }
 
+  .sm\:border-primary {
+    border-color: #5872b5;
+  }
+
   .sm\:border-black {
     border-color: #22292f;
   }
@@ -6052,6 +6154,10 @@ button,
 
   .sm\:hover\:border-transparent:hover {
     border-color: transparent;
+  }
+
+  .sm\:hover\:border-primary:hover {
+    border-color: #5872b5;
   }
 
   .sm\:hover\:border-black:hover {
@@ -8376,6 +8482,10 @@ button,
     color: transparent;
   }
 
+  .sm\:text-primary {
+    color: #5872b5;
+  }
+
   .sm\:text-black {
     color: #22292f;
   }
@@ -8666,6 +8776,10 @@ button,
 
   .sm\:hover\:text-transparent:hover {
     color: transparent;
+  }
+
+  .sm\:hover\:text-primary:hover {
+    color: #5872b5;
   }
 
   .sm\:hover\:text-black:hover {
@@ -9327,6 +9441,60 @@ button,
   .sm\:z-auto {
     z-index: auto;
   }
+
+  .sm\:bg-gradient-primary {
+    background-image: linear-gradient(30deg, #5872b5, #38c172);
+  }
+
+  .sm\:bg-gradient-dark {
+    background-image: linear-gradient(30deg, #de751f, #f66d9b);
+  }
+
+  .sm\:bg-gradient-light {
+    background-image: -webkit-gradient(linear, left top, right top, from(#51d88a), to(#4dc0b5));
+    background-image: linear-gradient(to right, #51d88a, #4dc0b5);
+  }
+
+  .sm\:bg-gradient {
+    background-image: -webkit-gradient(linear, left top, right top, from(#40e0d0), color-stop(#ff8c00), to(#ff0080));
+    background-image: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+  }
+
+  .sm\:bg-relay {
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#3a1c71), color-stop(#d76d77), to(#ffaf7b));
+    background-image: linear-gradient(to top left, #3a1c71, #d76d77, #ffaf7b);
+  }
+
+  .sm\:bg-mono-circle {
+    background-image: radial-gradient(circle, #ccc, #000);
+  }
+
+  .sm\:hover\:bg-gradient-primary:hover {
+    background-image: linear-gradient(30deg, #5872b5, #38c172);
+  }
+
+  .sm\:hover\:bg-gradient-dark:hover {
+    background-image: linear-gradient(30deg, #de751f, #f66d9b);
+  }
+
+  .sm\:hover\:bg-gradient-light:hover {
+    background-image: -webkit-gradient(linear, left top, right top, from(#51d88a), to(#4dc0b5));
+    background-image: linear-gradient(to right, #51d88a, #4dc0b5);
+  }
+
+  .sm\:hover\:bg-gradient:hover {
+    background-image: -webkit-gradient(linear, left top, right top, from(#40e0d0), color-stop(#ff8c00), to(#ff0080));
+    background-image: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+  }
+
+  .sm\:hover\:bg-relay:hover {
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#3a1c71), color-stop(#d76d77), to(#ffaf7b));
+    background-image: linear-gradient(to top left, #3a1c71, #d76d77, #ffaf7b);
+  }
+
+  .sm\:hover\:bg-mono-circle:hover {
+    background-image: radial-gradient(circle, #ccc, #000);
+  }
 }
 
 @media (min-width: 960px) {
@@ -9355,6 +9523,10 @@ button,
 
   .md\:bg-transparent {
     background-color: transparent;
+  }
+
+  .md\:bg-primary {
+    background-color: #5872b5;
   }
 
   .md\:bg-black {
@@ -9647,6 +9819,10 @@ button,
 
   .md\:hover\:bg-transparent:hover {
     background-color: transparent;
+  }
+
+  .md\:hover\:bg-primary:hover {
+    background-color: #5872b5;
   }
 
   .md\:hover\:bg-black:hover {
@@ -10005,6 +10181,10 @@ button,
     border-color: transparent;
   }
 
+  .md\:border-primary {
+    border-color: #5872b5;
+  }
+
   .md\:border-black {
     border-color: #22292f;
   }
@@ -10295,6 +10475,10 @@ button,
 
   .md\:hover\:border-transparent:hover {
     border-color: transparent;
+  }
+
+  .md\:hover\:border-primary:hover {
+    border-color: #5872b5;
   }
 
   .md\:hover\:border-black:hover {
@@ -12619,6 +12803,10 @@ button,
     color: transparent;
   }
 
+  .md\:text-primary {
+    color: #5872b5;
+  }
+
   .md\:text-black {
     color: #22292f;
   }
@@ -12909,6 +13097,10 @@ button,
 
   .md\:hover\:text-transparent:hover {
     color: transparent;
+  }
+
+  .md\:hover\:text-primary:hover {
+    color: #5872b5;
   }
 
   .md\:hover\:text-black:hover {
@@ -13570,6 +13762,60 @@ button,
   .md\:z-auto {
     z-index: auto;
   }
+
+  .md\:bg-gradient-primary {
+    background-image: linear-gradient(30deg, #5872b5, #38c172);
+  }
+
+  .md\:bg-gradient-dark {
+    background-image: linear-gradient(30deg, #de751f, #f66d9b);
+  }
+
+  .md\:bg-gradient-light {
+    background-image: -webkit-gradient(linear, left top, right top, from(#51d88a), to(#4dc0b5));
+    background-image: linear-gradient(to right, #51d88a, #4dc0b5);
+  }
+
+  .md\:bg-gradient {
+    background-image: -webkit-gradient(linear, left top, right top, from(#40e0d0), color-stop(#ff8c00), to(#ff0080));
+    background-image: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+  }
+
+  .md\:bg-relay {
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#3a1c71), color-stop(#d76d77), to(#ffaf7b));
+    background-image: linear-gradient(to top left, #3a1c71, #d76d77, #ffaf7b);
+  }
+
+  .md\:bg-mono-circle {
+    background-image: radial-gradient(circle, #ccc, #000);
+  }
+
+  .md\:hover\:bg-gradient-primary:hover {
+    background-image: linear-gradient(30deg, #5872b5, #38c172);
+  }
+
+  .md\:hover\:bg-gradient-dark:hover {
+    background-image: linear-gradient(30deg, #de751f, #f66d9b);
+  }
+
+  .md\:hover\:bg-gradient-light:hover {
+    background-image: -webkit-gradient(linear, left top, right top, from(#51d88a), to(#4dc0b5));
+    background-image: linear-gradient(to right, #51d88a, #4dc0b5);
+  }
+
+  .md\:hover\:bg-gradient:hover {
+    background-image: -webkit-gradient(linear, left top, right top, from(#40e0d0), color-stop(#ff8c00), to(#ff0080));
+    background-image: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+  }
+
+  .md\:hover\:bg-relay:hover {
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#3a1c71), color-stop(#d76d77), to(#ffaf7b));
+    background-image: linear-gradient(to top left, #3a1c71, #d76d77, #ffaf7b);
+  }
+
+  .md\:hover\:bg-mono-circle:hover {
+    background-image: radial-gradient(circle, #ccc, #000);
+  }
 }
 
 @media (min-width: 1200px) {
@@ -13598,6 +13844,10 @@ button,
 
   .lg\:bg-transparent {
     background-color: transparent;
+  }
+
+  .lg\:bg-primary {
+    background-color: #5872b5;
   }
 
   .lg\:bg-black {
@@ -13890,6 +14140,10 @@ button,
 
   .lg\:hover\:bg-transparent:hover {
     background-color: transparent;
+  }
+
+  .lg\:hover\:bg-primary:hover {
+    background-color: #5872b5;
   }
 
   .lg\:hover\:bg-black:hover {
@@ -14248,6 +14502,10 @@ button,
     border-color: transparent;
   }
 
+  .lg\:border-primary {
+    border-color: #5872b5;
+  }
+
   .lg\:border-black {
     border-color: #22292f;
   }
@@ -14538,6 +14796,10 @@ button,
 
   .lg\:hover\:border-transparent:hover {
     border-color: transparent;
+  }
+
+  .lg\:hover\:border-primary:hover {
+    border-color: #5872b5;
   }
 
   .lg\:hover\:border-black:hover {
@@ -16862,6 +17124,10 @@ button,
     color: transparent;
   }
 
+  .lg\:text-primary {
+    color: #5872b5;
+  }
+
   .lg\:text-black {
     color: #22292f;
   }
@@ -17152,6 +17418,10 @@ button,
 
   .lg\:hover\:text-transparent:hover {
     color: transparent;
+  }
+
+  .lg\:hover\:text-primary:hover {
+    color: #5872b5;
   }
 
   .lg\:hover\:text-black:hover {
@@ -17813,6 +18083,60 @@ button,
   .lg\:z-auto {
     z-index: auto;
   }
+
+  .lg\:bg-gradient-primary {
+    background-image: linear-gradient(30deg, #5872b5, #38c172);
+  }
+
+  .lg\:bg-gradient-dark {
+    background-image: linear-gradient(30deg, #de751f, #f66d9b);
+  }
+
+  .lg\:bg-gradient-light {
+    background-image: -webkit-gradient(linear, left top, right top, from(#51d88a), to(#4dc0b5));
+    background-image: linear-gradient(to right, #51d88a, #4dc0b5);
+  }
+
+  .lg\:bg-gradient {
+    background-image: -webkit-gradient(linear, left top, right top, from(#40e0d0), color-stop(#ff8c00), to(#ff0080));
+    background-image: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+  }
+
+  .lg\:bg-relay {
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#3a1c71), color-stop(#d76d77), to(#ffaf7b));
+    background-image: linear-gradient(to top left, #3a1c71, #d76d77, #ffaf7b);
+  }
+
+  .lg\:bg-mono-circle {
+    background-image: radial-gradient(circle, #ccc, #000);
+  }
+
+  .lg\:hover\:bg-gradient-primary:hover {
+    background-image: linear-gradient(30deg, #5872b5, #38c172);
+  }
+
+  .lg\:hover\:bg-gradient-dark:hover {
+    background-image: linear-gradient(30deg, #de751f, #f66d9b);
+  }
+
+  .lg\:hover\:bg-gradient-light:hover {
+    background-image: -webkit-gradient(linear, left top, right top, from(#51d88a), to(#4dc0b5));
+    background-image: linear-gradient(to right, #51d88a, #4dc0b5);
+  }
+
+  .lg\:hover\:bg-gradient:hover {
+    background-image: -webkit-gradient(linear, left top, right top, from(#40e0d0), color-stop(#ff8c00), to(#ff0080));
+    background-image: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+  }
+
+  .lg\:hover\:bg-relay:hover {
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#3a1c71), color-stop(#d76d77), to(#ffaf7b));
+    background-image: linear-gradient(to top left, #3a1c71, #d76d77, #ffaf7b);
+  }
+
+  .lg\:hover\:bg-mono-circle:hover {
+    background-image: radial-gradient(circle, #ccc, #000);
+  }
 }
 
 @media (min-width: 1600px) {
@@ -17841,6 +18165,10 @@ button,
 
   .xl\:bg-transparent {
     background-color: transparent;
+  }
+
+  .xl\:bg-primary {
+    background-color: #5872b5;
   }
 
   .xl\:bg-black {
@@ -18133,6 +18461,10 @@ button,
 
   .xl\:hover\:bg-transparent:hover {
     background-color: transparent;
+  }
+
+  .xl\:hover\:bg-primary:hover {
+    background-color: #5872b5;
   }
 
   .xl\:hover\:bg-black:hover {
@@ -18491,6 +18823,10 @@ button,
     border-color: transparent;
   }
 
+  .xl\:border-primary {
+    border-color: #5872b5;
+  }
+
   .xl\:border-black {
     border-color: #22292f;
   }
@@ -18781,6 +19117,10 @@ button,
 
   .xl\:hover\:border-transparent:hover {
     border-color: transparent;
+  }
+
+  .xl\:hover\:border-primary:hover {
+    border-color: #5872b5;
   }
 
   .xl\:hover\:border-black:hover {
@@ -21105,6 +21445,10 @@ button,
     color: transparent;
   }
 
+  .xl\:text-primary {
+    color: #5872b5;
+  }
+
   .xl\:text-black {
     color: #22292f;
   }
@@ -21395,6 +21739,10 @@ button,
 
   .xl\:hover\:text-transparent:hover {
     color: transparent;
+  }
+
+  .xl\:hover\:text-primary:hover {
+    color: #5872b5;
   }
 
   .xl\:hover\:text-black:hover {
@@ -22055,5 +22403,59 @@ button,
 
   .xl\:z-auto {
     z-index: auto;
+  }
+
+  .xl\:bg-gradient-primary {
+    background-image: linear-gradient(30deg, #5872b5, #38c172);
+  }
+
+  .xl\:bg-gradient-dark {
+    background-image: linear-gradient(30deg, #de751f, #f66d9b);
+  }
+
+  .xl\:bg-gradient-light {
+    background-image: -webkit-gradient(linear, left top, right top, from(#51d88a), to(#4dc0b5));
+    background-image: linear-gradient(to right, #51d88a, #4dc0b5);
+  }
+
+  .xl\:bg-gradient {
+    background-image: -webkit-gradient(linear, left top, right top, from(#40e0d0), color-stop(#ff8c00), to(#ff0080));
+    background-image: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+  }
+
+  .xl\:bg-relay {
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#3a1c71), color-stop(#d76d77), to(#ffaf7b));
+    background-image: linear-gradient(to top left, #3a1c71, #d76d77, #ffaf7b);
+  }
+
+  .xl\:bg-mono-circle {
+    background-image: radial-gradient(circle, #ccc, #000);
+  }
+
+  .xl\:hover\:bg-gradient-primary:hover {
+    background-image: linear-gradient(30deg, #5872b5, #38c172);
+  }
+
+  .xl\:hover\:bg-gradient-dark:hover {
+    background-image: linear-gradient(30deg, #de751f, #f66d9b);
+  }
+
+  .xl\:hover\:bg-gradient-light:hover {
+    background-image: -webkit-gradient(linear, left top, right top, from(#51d88a), to(#4dc0b5));
+    background-image: linear-gradient(to right, #51d88a, #4dc0b5);
+  }
+
+  .xl\:hover\:bg-gradient:hover {
+    background-image: -webkit-gradient(linear, left top, right top, from(#40e0d0), color-stop(#ff8c00), to(#ff0080));
+    background-image: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+  }
+
+  .xl\:hover\:bg-relay:hover {
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#3a1c71), color-stop(#d76d77), to(#ffaf7b));
+    background-image: linear-gradient(to top left, #3a1c71, #d76d77, #ffaf7b);
+  }
+
+  .xl\:hover\:bg-mono-circle:hover {
+    background-image: radial-gradient(circle, #ccc, #000);
   }
 }

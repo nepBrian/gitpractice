@@ -45,6 +45,7 @@ View the full documentation at https://tailwindcss.com.
 
 let colors = {
   'transparent': 'transparent',
+  'primary': '#5872b5',
 
   'black': '#22292f',
   'grey-darkest': '#3d4852',
@@ -913,6 +914,23 @@ module.exports = {
       // center: true,
       // padding: '1rem',
     }),
+    require('tailwindcss-plugins/gradients')({
+            gradients: {
+                // Array definition (defaults to linear gradients).
+                'gradient-primary':      ['30deg', colors['primary'], colors['green']],
+                'gradient-dark': ['30deg', colors['orange-dark'], colors['pink']],
+                'gradient-light':    ['to right', colors['green-light'], colors['teal']],
+                'gradient':   ['to right', '#40E0D0', '#FF8C00', '#FF0080'],
+                'relay':      ['to top left', '#3A1C71', '#D76D77', '#FFAF7B'],
+
+                // Object definition.
+                'mono-circle': {
+                    type: 'radial',
+                    colors: ['circle', '#CCC', '#000']
+                },
+            },
+            variants: ['responsive', 'hover']
+        }),
   ],
 
 

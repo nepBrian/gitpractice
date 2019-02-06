@@ -2,7 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 @import "custom-utilities";
-@import "variables";
+
+.nav {
+
+}
+.nav-background-dark {
+
+}
+.nav-background-light {
+
+}
+
+.card {
+    @apply p-10 m-auto rounded-sm;
+}
+.card-primary {
+    @apply bg-primary shadow-md;
+}
 
 .cs-full-width {
     @apply justify-center items-center flex py-10;
