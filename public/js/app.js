@@ -15477,6 +15477,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -15485,6 +15487,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         return {
             association: __WEBPACK_IMPORTED_MODULE_0__data_json__["association"]
         };
+    },
+
+    computed: {
+        currentYear: function currentYear() {
+            return new Date().getFullYear();
+        }
     }
 });
 
@@ -15497,30 +15505,45 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c(
-      "div",
-      {
-        staticClass:
-          "w-full bg-blue-dark sm:bg-green-dark md:bg-orange-dark lg:bg-red-dark xl:bg-black  h-48 flex justify-center items-center text-white text-center px-10"
-      },
-      [
-        _vm._v("\n        Privacy Policy | Terms Of Service "),
+    _c("div", { staticClass: "bg-blue-darker py-16" }, [
+      _c("p", { staticClass: "text-white text-center" }, [
+        _c(
+          "a",
+          {
+            staticClass: "text-blue hover:text-blue-dark no-underline",
+            attrs: { href: "privacy-policy" }
+          },
+          [_vm._v("Privacy Policy")]
+        ),
+        _vm._v(" | "),
+        _c(
+          "a",
+          {
+            staticClass: "text-blue hover:text-blue-dark no-underline",
+            attrs: { href: "terms-of-service" }
+          },
+          [_vm._v("Terms Of Service")]
+        ),
+        _vm._v(" "),
         _c("br"),
         _c("br"),
         _vm._v(
-          "\n        Copyright © 2018 " + _vm._s(_vm.association.fullName)
+          "\n            Copyright © " +
+            _vm._s(_vm.currentYear) +
+            " " +
+            _vm._s(_vm.association.fullName)
         ),
         _c("br"),
         _vm._v(
-          "\n        Website built and maintained by New Equity Productions/NEP Inc."
+          "\n            Website built and maintained by New Equity Productions/NEP Inc."
         ),
         _c("br"),
         _c("br"),
-        _vm._v("\n\n        NEP IS A UNION WORKPLACE!"),
+        _vm._v("\n\n            NEP IS A UNION WORKPLACE!"),
         _c("br"),
-        _vm._v(" PROUD MEMBER OF CWA L-9003\n    ")
-      ]
-    )
+        _vm._v(" PROUD MEMBER OF CWA L-9003\n        ")
+      ])
+    ])
   ])
 }
 var staticRenderFns = []
@@ -15913,7 +15936,7 @@ var render = function() {
         _vm._m(0),
         _vm._v(" "),
         _c("div", { staticClass: "flex flex-2 w-full pl-10 my-4" }, [
-          _c("div", { staticClass: "uk-card p-8 bg-grey-light" }, [
+          _c("div", { staticClass: "uk-card p-8 bg-grey-light shadow" }, [
             _c("h6", { staticClass: "text-lg uppercase mb-4" }, [
               _vm._v("About the " + _vm._s(_vm.association.acronym))
             ]),
@@ -15926,18 +15949,11 @@ var render = function() {
               _vm._v(
                 "The " +
                   _vm._s(_vm.association.fullName) +
-                  " consists of 2205 sworn officers and civilian personnel whom have taken an oath to maintain law and order for our citizens, and represent the finest element of our community."
+                  " consists of 60 sworn officers and civilian personnel whom have taken an oath to maintain law and order for our citizens, and represent the finest element of our community. We are dedicated to partnering with the community and providing quality police service through everyday encounters, emphasizing the highest degree of cooperation, professionalism and ethical behavior. Our role is to maintain " +
+                  _vm._s(_vm.association.address.city) +
+                  "'s safe and secure atmosphere, and our community policing approach helps keeps your neighborhood safe by working with our police officers daily."
               )
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass:
-                  "bg-blue-light hover:bg-blue text-white font-bold py-2 px-4 rounded-full"
-              },
-              [_vm._v("Read More")]
-            )
+            ])
           ])
         ])
       ])
@@ -15953,7 +15969,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "flex flex-auto flex-wrap" }, [
         _c("div", {
           staticClass:
-            "flex-auto uk-card bg-grey-light bg-cover bg-center bg-no-repeat h-64 md:h-auto",
+            "shadow flex-auto uk-card bg-grey-light bg-cover bg-center bg-no-repeat h-64 md:h-auto",
           staticStyle: {
             "background-image":
               "url('https://stoughtonpolicerelief.org/templates/yootheme/cache/SPDMotorcycle-0374845a.jpeg')"

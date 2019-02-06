@@ -22,3 +22,9 @@ route::get('/contact', function () {
 route::get('/components', function () {
     return view('components');
 });
+route::get('/privacy-policy', function () {
+    return view('privacypolicy');
+});
+route::get('/terms-of-service', function () {
+    return view('termsofservice');
+});
