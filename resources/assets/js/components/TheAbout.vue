@@ -5,15 +5,15 @@
 
                 <div class="flex flex-1 w-full pl-10 my-4">
                     <div class="flex flex-auto flex-wrap">
-                        <div class="flex-auto uk-card bg-grey-light bg-cover bg-center bg-no-repeat h-64 md:h-auto" style="background-image: url('https://stoughtonpolicerelief.org/templates/yootheme/cache/SPDMotorcycle-0374845a.jpeg');"></div>
+                        <div class="shadow flex-auto uk-card bg-grey-light bg-cover bg-center bg-no-repeat h-64 md:h-auto" style="background-image: url('https://stoughtonpolicerelief.org/templates/yootheme/cache/SPDMotorcycle-0374845a.jpeg');"></div>
                     </div>
                 </div>
                 <div class="flex flex-2 w-full pl-10 my-4">
-                    <div class="uk-card p-8 bg-grey-light">
+                    <div class="uk-card p-8 bg-grey-light shadow">
                         <h6 class="text-lg uppercase mb-4">About the {{ association.acronym }}</h6>
                         <h3 class="text-3xl font-hairline">Our Mission</h3>
-                        <p class="mt-4 mb-8 font-light leading-normal">The {{ association.fullName }} consists of 2205 sworn officers and civilian personnel whom have taken an oath to maintain law and order for our citizens, and represent the finest element of our community.</p>
-                        <button class="bg-blue-light hover:bg-blue text-white font-bold py-2 px-4 rounded-full">Read More</button>
+                        <p class="mt-4 mb-8 font-light leading-normal">The {{ association.fullName }} consists of 60 sworn officers and civilian personnel whom have taken an oath to maintain law and order for our citizens, and represent the finest element of our community. We are dedicated to partnering with the community and providing quality police service through everyday encounters, emphasizing the highest degree of cooperation, professionalism and ethical behavior. Our role is to maintain {{ association.address.city }}'s safe and secure atmosphere, and our community policing approach helps keeps your neighborhood safe by working with our police officers daily.</p>
+                        <!-- <button class="bg-blue-light hover:bg-blue text-white font-bold py-2 px-4 rounded-full">Read More</button> -->
                     </div>
                 </div>
 
