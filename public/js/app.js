@@ -16097,6 +16097,40 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -16118,60 +16152,243 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("section", { staticClass: "bg-grey-darkest py-16" }, [
     _c("div", { staticClass: "max-w-xl m-auto px-10" }, [
+      _c("h1", { staticClass: "text-blue-lightest uppercase mb-4" }, [
+        _vm._v("Executive Board")
+      ]),
+      _vm._v(" "),
       _c("div", { staticClass: "-ml-10 flex flex-wrap flex-col md:flex-row" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _c("div", { staticClass: "flex flex-1 w-full pl-10 my-4" }, [
-          _c("div", { staticClass: "uk-card p-8 bg-grey-light" }, [
-            _c("h6", { staticClass: "text-lg uppercase mb-4" }, [
-              _vm._v("About the President")
-            ]),
-            _vm._v(" "),
-            _c("h3", { staticClass: "text-3xl font-hairline" }, [
-              _vm._v("President/Board")
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "mt-4 mb-8 font-light leading-normal" }, [
-              _vm._v(
-                "The " +
-                  _vm._s(_vm.association.fullName) +
-                  " consists of 60 sworn officers and civilian personnel whom have taken an oath to maintain law and order for our citizens, and represent the finest element of our community."
-              )
-            ]),
-            _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "flex flex-1 w-full pl-10 my-4 justify-center" },
+          [
             _c(
-              "button",
-              {
-                staticClass:
-                  "bg-blue-light hover:bg-blue text-white font-bold py-2 px-4 rounded-full"
-              },
-              [_vm._v("Read More")]
+              "div",
+              { staticClass: "rounded p-8 bg-grey-light w-full relative" },
+              [
+                _c("h3", { staticClass: "text-2xl font-hairline" }, [
+                  _vm._v("President")
+                ]),
+                _c("br"),
+                _vm._v(" "),
+                _c("p", [_vm._v("Joey Shmoey")]),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "absolute pin-r pin-b m-4 bg-blue hover:bg-blue-dark text-grey-light p-1 rounded no-underline text-xs",
+                    attrs: { href: "#" }
+                  },
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "w-6 icon-mail",
+                        attrs: {
+                          xmlns: "http://www.w3.org/2000/svg",
+                          viewBox: "0 0 24 22"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          staticStyle: { fill: "#fdfdfd" },
+                          attrs: {
+                            d:
+                              "M22 8.62V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.62l9.55 4.77a1 1 0 0 0 .9 0L22 8.62z"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          staticStyle: { fill: "#fdfdfd" },
+                          attrs: {
+                            d:
+                              "M12 11.38l-10-5V6c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v.38l-10 5z"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                )
+              ]
             )
-          ])
-        ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "flex flex-1 w-full pl-10 my-4 justify-center" },
+          [
+            _c(
+              "div",
+              { staticClass: "rounded p-8 bg-grey-light w-full relative" },
+              [
+                _c("h3", { staticClass: "text-2xl font-hairline" }, [
+                  _vm._v("Vice-President")
+                ]),
+                _c("br"),
+                _vm._v(" "),
+                _c("p", [_vm._v("Guy Jones")]),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "absolute pin-r pin-b m-4 bg-blue hover:bg-blue-dark text-grey-light p-1 rounded no-underline text-xs",
+                    attrs: { href: "#" }
+                  },
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "w-6 icon-mail",
+                        attrs: {
+                          xmlns: "http://www.w3.org/2000/svg",
+                          viewBox: "0 0 24 22"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          staticStyle: { fill: "#fdfdfd" },
+                          attrs: {
+                            d:
+                              "M22 8.62V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.62l9.55 4.77a1 1 0 0 0 .9 0L22 8.62z"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          staticStyle: { fill: "#fdfdfd" },
+                          attrs: {
+                            d:
+                              "M12 11.38l-10-5V6c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v.38l-10 5z"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                )
+              ]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "flex flex-1 w-full pl-10 my-4 justify-center" },
+          [
+            _c(
+              "div",
+              { staticClass: "rounded p-8 bg-grey-light w-full relative" },
+              [
+                _c("h3", { staticClass: "text-2xl font-hairline" }, [
+                  _vm._v("Treasurer")
+                ]),
+                _c("br"),
+                _vm._v(" "),
+                _c("p", [_vm._v("Derek Francisco")]),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "absolute pin-r pin-b m-4 bg-blue hover:bg-blue-dark text-grey-light p-1 rounded no-underline text-xs",
+                    attrs: { href: "#" }
+                  },
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "w-6 icon-mail",
+                        attrs: {
+                          xmlns: "http://www.w3.org/2000/svg",
+                          viewBox: "0 0 24 22"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          staticStyle: { fill: "#fdfdfd" },
+                          attrs: {
+                            d:
+                              "M22 8.62V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.62l9.55 4.77a1 1 0 0 0 .9 0L22 8.62z"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          staticStyle: { fill: "#fdfdfd" },
+                          attrs: {
+                            d:
+                              "M12 11.38l-10-5V6c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v.38l-10 5z"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                )
+              ]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "flex flex-1 w-full pl-10 my-4 justify-center" },
+          [
+            _c(
+              "div",
+              { staticClass: "rounded p-8 bg-grey-light w-full relative" },
+              [
+                _c("h3", { staticClass: "text-2xl font-hairline" }, [
+                  _vm._v("Secretary")
+                ]),
+                _c("br"),
+                _vm._v(" "),
+                _c("p", [_vm._v("John Reilly")]),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "absolute pin-r pin-b m-4 bg-blue hover:bg-blue-dark text-grey-light p-1 rounded no-underline text-xs",
+                    attrs: { href: "#" }
+                  },
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "w-6 icon-mail",
+                        attrs: {
+                          xmlns: "http://www.w3.org/2000/svg",
+                          viewBox: "0 0 24 22"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          staticStyle: { fill: "#fdfdfd" },
+                          attrs: {
+                            d:
+                              "M22 8.62V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.62l9.55 4.77a1 1 0 0 0 .9 0L22 8.62z"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          staticStyle: { fill: "#fdfdfd" },
+                          attrs: {
+                            d:
+                              "M12 11.38l-10-5V6c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v.38l-10 5z"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                )
+              ]
+            )
+          ]
+        )
       ])
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "flex flex-1 w-full pl-10 my-4" }, [
-      _c("div", { staticClass: "flex flex-auto flex-wrap" }, [
-        _c("div", {
-          staticClass:
-            "flex-auto uk-card bg-grey-light bg-cover bg-center bg-no-repeat h-64 md:h-auto",
-          staticStyle: {
-            "background-image":
-              "url('https://stoughtonpolicerelief.org/templates/yootheme/cache/SPDMotorcycle-0374845a.jpeg')"
-          }
-        })
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
