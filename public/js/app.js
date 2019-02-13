@@ -15934,7 +15934,7 @@ var render = function() {
               "button",
               {
                 staticClass:
-                  "bg-blue-light hover:bg-blue text-white font-bold py-2 px-4 rounded-full"
+                  "bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded-full"
               },
               [_vm._v("Read More")]
             )
@@ -16114,17 +16114,20 @@ var render = function() {
         _vm._v("Executive Board")
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "-ml-10 flex flex-wrap flex-col md:flex-row" }, [
+      _c("div", { staticClass: "-ml-10 flex flex-wrap" }, [
         _c(
           "div",
-          { staticClass: "flex flex-1 w-full pl-10 my-4 justify-center" },
+          {
+            staticClass:
+              "flex w-full sm:w-1/2 lg:w-1/4 pl-10 my-4 justify-center"
+          },
           [
             _c(
               "div",
               { staticClass: "rounded p-8 bg-grey-light w-full relative" },
               [
                 _c("img", {
-                  staticClass: "w-full rounded-full mb-4",
+                  staticClass: "w-full rounded mb-4",
                   attrs: {
                     src: "https://picsum.photos/200/200?image=0",
                     alt: "Executive board president"
@@ -16184,14 +16187,17 @@ var render = function() {
         _vm._v(" "),
         _c(
           "div",
-          { staticClass: "flex flex-1 w-full pl-10 my-4 justify-center" },
+          {
+            staticClass:
+              "flex w-full sm:w-1/2 lg:w-1/4 pl-10 my-4 justify-center"
+          },
           [
             _c(
               "div",
               { staticClass: "rounded p-8 bg-grey-light w-full relative" },
               [
                 _c("img", {
-                  staticClass: "w-full rounded-full mb-4",
+                  staticClass: "w-full rounded mb-4",
                   attrs: {
                     src: "https://picsum.photos/200/200?image=1",
                     alt: "Executive Board vice-president"
@@ -16251,14 +16257,17 @@ var render = function() {
         _vm._v(" "),
         _c(
           "div",
-          { staticClass: "flex flex-1 w-full pl-10 my-4 justify-center" },
+          {
+            staticClass:
+              "flex w-full sm:w-1/2 lg:w-1/4 pl-10 my-4 justify-center"
+          },
           [
             _c(
               "div",
               { staticClass: "rounded p-8 bg-grey-light w-full relative" },
               [
                 _c("img", {
-                  staticClass: "w-full rounded-full mb-4",
+                  staticClass: "w-full rounded mb-4",
                   attrs: {
                     src: "https://picsum.photos/200/200?image=2",
                     alt: "Executive Board treasurer"
@@ -16318,14 +16327,17 @@ var render = function() {
         _vm._v(" "),
         _c(
           "div",
-          { staticClass: "flex flex-1 w-full pl-10 my-4 justify-center" },
+          {
+            staticClass:
+              "flex w-full sm:w-1/2 lg:w-1/4 pl-10 my-4 justify-center"
+          },
           [
             _c(
               "div",
               { staticClass: "rounded p-8 bg-grey-light w-full relative" },
               [
                 _c("img", {
-                  staticClass: "w-full rounded-full mb-4",
+                  staticClass: "w-full rounded mb-4",
                   attrs: {
                     src: "https://picsum.photos/200/200?image=3",
                     alt: "Executive Board secretary"

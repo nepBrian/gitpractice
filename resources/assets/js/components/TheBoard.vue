@@ -2,10 +2,10 @@
     <section class="bg-grey-darkest py-16">
         <div class="max-w-xl m-auto px-10">
             <h1 class="text-blue-lightest uppercase mb-4">Executive Board</h1>
-            <div class="-ml-10 flex flex-wrap flex-col md:flex-row">
-                <div class="flex flex-1 w-full pl-10 my-4 justify-center">
+            <div class="-ml-10 flex flex-wrap">
+                <div class="flex w-full sm:w-1/2 lg:w-1/4 pl-10 my-4 justify-center">
                     <div class="rounded p-8 bg-grey-light w-full relative">
-                        <img class="w-full rounded-full mb-4" src="https://picsum.photos/200/200?image=0" alt="Executive board president">
+                        <img class="w-full rounded mb-4" src="https://picsum.photos/200/200?image=0" alt="Executive board president">
                         <h3 class="text-2xl font-hairline">President</h3><br />
                         <p class="uppercase font-bold">Joey Shmoey</p>
                         <a href="#" class="absolute pin-r pin-b m-4 bg-blue hover:bg-blue-dark text-grey-light p-1 rounded-full no-underline text-xs">
@@ -16,9 +16,9 @@
                         </a>
                     </div>
                 </div>
-                <div class="flex flex-1 w-full pl-10 my-4 justify-center">
+                <div class="flex w-full sm:w-1/2 lg:w-1/4 pl-10 my-4 justify-center">
                     <div class="rounded p-8 bg-grey-light w-full relative">
-                        <img class="w-full rounded-full mb-4" src="https://picsum.photos/200/200?image=1" alt="Executive Board vice-president">
+                        <img class="w-full rounded mb-4" src="https://picsum.photos/200/200?image=1" alt="Executive Board vice-president">
                         <h3 class="text-2xl font-hairline">Vice-President</h3><br />
                         <p class="uppercase font-bold">Guy Jones</p>
                         <a href="#" class="absolute pin-r pin-b m-4 bg-blue hover:bg-blue-dark text-grey-light p-1 rounded-full no-underline text-xs">
@@ -29,9 +29,9 @@
                         </a>
                     </div>
                 </div>
-                <div class="flex flex-1 w-full pl-10 my-4 justify-center">
+                <div class="flex w-full sm:w-1/2 lg:w-1/4 pl-10 my-4 justify-center">
                     <div class="rounded p-8 bg-grey-light w-full relative">
-                        <img class="w-full rounded-full mb-4" src="https://picsum.photos/200/200?image=2" alt="Executive Board treasurer">
+                        <img class="w-full rounded mb-4" src="https://picsum.photos/200/200?image=2" alt="Executive Board treasurer">
                         <h3 class="text-2xl font-hairline">Treasurer</h3><br />
                         <p class="uppercase font-bold">Derek Francisco</p>
                         <a href="#" class="absolute pin-r pin-b m-4 bg-blue hover:bg-blue-dark text-grey-light p-1 rounded-full no-underline text-xs">
@@ -42,9 +42,9 @@
                         </a>
                     </div>
                 </div>
-                <div class="flex flex-1 w-full pl-10 my-4 justify-center">
+                <div class="flex w-full sm:w-1/2 lg:w-1/4 pl-10 my-4 justify-center">
                     <div class="rounded p-8 bg-grey-light w-full relative">
-                        <img class="w-full rounded-full mb-4" src="https://picsum.photos/200/200?image=3" alt="Executive Board secretary">
+                        <img class="w-full rounded mb-4" src="https://picsum.photos/200/200?image=3" alt="Executive Board secretary">
                         <h3 class="text-2xl font-hairline">Secretary</h3><br />
                         <p class="uppercase font-bold">John Reilly</p>
                         <a href="#" class="absolute pin-r pin-b m-4 bg-blue hover:bg-blue-dark text-grey-light p-1 rounded-full no-underline text-xs">

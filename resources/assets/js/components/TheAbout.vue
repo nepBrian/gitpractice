@@ -13,7 +13,7 @@
                         <h6 class="text-lg uppercase mb-4">About the {{ association.acronym }}</h6>
                         <h3 class="text-3xl font-hairline">Our Mission</h3>
                         <p class="mt-4 mb-8 font-light leading-normal">The {{ association.fullName }} consists of 2205 sworn officers and civilian personnel whom have taken an oath to maintain law and order for our citizens, and represent the finest element of our community.</p>
-                        <button class="bg-blue-light hover:bg-blue text-white font-bold py-2 px-4 rounded-full">Read More</button>
+                        <button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded-full">Read More</button>
                     </div>
                 </div>
 
