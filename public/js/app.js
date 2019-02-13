@@ -16085,6 +16085,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -16119,18 +16123,28 @@ var render = function() {
               "div",
               { staticClass: "rounded p-8 bg-grey-light w-full relative" },
               [
+                _c("img", {
+                  staticClass: "w-full rounded-full mb-4",
+                  attrs: {
+                    src: "https://picsum.photos/200/200?image=0",
+                    alt: "Executive board president"
+                  }
+                }),
+                _vm._v(" "),
                 _c("h3", { staticClass: "text-2xl font-hairline" }, [
                   _vm._v("President")
                 ]),
                 _c("br"),
                 _vm._v(" "),
-                _c("p", [_vm._v("Joey Shmoey")]),
+                _c("p", { staticClass: "uppercase font-bold" }, [
+                  _vm._v("Joey Shmoey")
+                ]),
                 _vm._v(" "),
                 _c(
                   "a",
                   {
                     staticClass:
-                      "absolute pin-r pin-b m-4 bg-blue hover:bg-blue-dark text-grey-light p-1 rounded no-underline text-xs",
+                      "absolute pin-r pin-b m-4 bg-blue hover:bg-blue-dark text-grey-light p-1 rounded-full no-underline text-xs",
                     attrs: { href: "#" }
                   },
                   [
@@ -16176,18 +16190,28 @@ var render = function() {
               "div",
               { staticClass: "rounded p-8 bg-grey-light w-full relative" },
               [
+                _c("img", {
+                  staticClass: "w-full rounded-full mb-4",
+                  attrs: {
+                    src: "https://picsum.photos/200/200?image=1",
+                    alt: "Executive Board vice-president"
+                  }
+                }),
+                _vm._v(" "),
                 _c("h3", { staticClass: "text-2xl font-hairline" }, [
                   _vm._v("Vice-President")
                 ]),
                 _c("br"),
                 _vm._v(" "),
-                _c("p", [_vm._v("Guy Jones")]),
+                _c("p", { staticClass: "uppercase font-bold" }, [
+                  _vm._v("Guy Jones")
+                ]),
                 _vm._v(" "),
                 _c(
                   "a",
                   {
                     staticClass:
-                      "absolute pin-r pin-b m-4 bg-blue hover:bg-blue-dark text-grey-light p-1 rounded no-underline text-xs",
+                      "absolute pin-r pin-b m-4 bg-blue hover:bg-blue-dark text-grey-light p-1 rounded-full no-underline text-xs",
                     attrs: { href: "#" }
                   },
                   [
@@ -16233,18 +16257,28 @@ var render = function() {
               "div",
               { staticClass: "rounded p-8 bg-grey-light w-full relative" },
               [
+                _c("img", {
+                  staticClass: "w-full rounded-full mb-4",
+                  attrs: {
+                    src: "https://picsum.photos/200/200?image=2",
+                    alt: "Executive Board treasurer"
+                  }
+                }),
+                _vm._v(" "),
                 _c("h3", { staticClass: "text-2xl font-hairline" }, [
                   _vm._v("Treasurer")
                 ]),
                 _c("br"),
                 _vm._v(" "),
-                _c("p", [_vm._v("Derek Francisco")]),
+                _c("p", { staticClass: "uppercase font-bold" }, [
+                  _vm._v("Derek Francisco")
+                ]),
                 _vm._v(" "),
                 _c(
                   "a",
                   {
                     staticClass:
-                      "absolute pin-r pin-b m-4 bg-blue hover:bg-blue-dark text-grey-light p-1 rounded no-underline text-xs",
+                      "absolute pin-r pin-b m-4 bg-blue hover:bg-blue-dark text-grey-light p-1 rounded-full no-underline text-xs",
                     attrs: { href: "#" }
                   },
                   [
@@ -16290,18 +16324,28 @@ var render = function() {
               "div",
               { staticClass: "rounded p-8 bg-grey-light w-full relative" },
               [
+                _c("img", {
+                  staticClass: "w-full rounded-full mb-4",
+                  attrs: {
+                    src: "https://picsum.photos/200/200?image=3",
+                    alt: "Executive Board secretary"
+                  }
+                }),
+                _vm._v(" "),
                 _c("h3", { staticClass: "text-2xl font-hairline" }, [
                   _vm._v("Secretary")
                 ]),
                 _c("br"),
                 _vm._v(" "),
-                _c("p", [_vm._v("John Reilly")]),
+                _c("p", { staticClass: "uppercase font-bold" }, [
+                  _vm._v("John Reilly")
+                ]),
                 _vm._v(" "),
                 _c(
                   "a",
                   {
                     staticClass:
-                      "absolute pin-r pin-b m-4 bg-blue hover:bg-blue-dark text-grey-light p-1 rounded no-underline text-xs",
+                      "absolute pin-r pin-b m-4 bg-blue hover:bg-blue-dark text-grey-light p-1 rounded-full no-underline text-xs",
                     attrs: { href: "#" }
                   },
                   [
