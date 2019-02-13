@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-grey-lightest py-16">
+    <section id="about" class="bg-grey-lightest py-16">
         <div class="max-w-xl m-auto px-10">
             <div class="-ml-10 flex flex-wrap flex-col md:flex-row">
 

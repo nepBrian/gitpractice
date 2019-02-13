@@ -14765,7 +14765,7 @@ exports = module.exports = __webpack_require__(22)(false);
 
 
 // module
-exports.push([module.i, "\nbody.fixed-nav nav[data-v-b5f2518c] {\n  position: fixed;\n  -webkit-box-shadow: 0 5px 0 rgba(0, 0, 0, .1);\n          box-shadow: 0 5px 0 rgba(0, 0, 0, .1);\n}\nnav[data-v-b5f2518c] {\n  background: black;\n  top: 0;\n  width: 100%;\n  -webkit-transition: all .5s;\n  transition: all .5s;\n  position: relative;\n  z-index: 1;\n}\n", ""]);
+exports.push([module.i, "/*  body.fixed-nav nav {\n    position: fixed;\n    box-shadow:0 5px 0 rgba(0,0,0,0.1);\n  }\n\n  nav {\n    background:black;\n    top:0;\n    width: 100%;\n    transition:all 0.5s;\n    position: relative;\n    z-index: 1;\n  }*/\n", ""]);
 
 // exports
 
@@ -15150,18 +15150,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
-        stickyNav: function stickyNav() {
-            // const nav = document.querySelector('#navbar');
-            // let topOfNav = nav.offsetTop;
-            // console.log(window.scrollY, this.topOfNav);
-            // if (window.scrollY >= this.topOfNav) {
-            //   document.body.style.paddingTop = nav.offsetHeight + 'px';
-            //   document.body.classList.add('fixed-nav');
-            // } else {
-            //   document.body.classList.remove('fixed-nav');
-            //   document.body.style.paddingTop = 0;
-            // }
-        }
+        // stickyNav() {
+        //     const nav = document.querySelector('#navbar');
+        //     let topOfNav = nav.offsetTop;
+        //     console.log(window.scrollY, topOfNav);
+        //     if (window.scrollY >= topOfNav) {
+        //       document.body.style.paddingTop = nav.offsetHeight + 'px';
+        //       document.body.classList.add('fixed-nav');
+        //     } else {
+        //       document.body.classList.remove('fixed-nav');
+        //       document.body.style.paddingTop = 0;
+        //     }
+        // },
+        // smoothScrolling: function() {
+        //     let x = document.querySelector('#about');
+        //     x.scrollIntoView({
+        //         behavior: 'smooth'
+        //     });
+        //     console.log(this.$refs);
+        // }
     },
     destroyed: function destroyed() {
         // window.removeEventListener('scroll', this.handleScroll);
@@ -15176,60 +15183,71 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "nav",
+    { staticClass: "hidden lg:block", attrs: { id: "navbar" } },
+    [
+      _c(
+        "ul",
+        {
+          staticClass:
+            "list-reset flex justify-center items-center bg-blue-lightest uppercase tracking-wide font-semibold py-8 lg:text-md"
+        },
+        [
+          _c("li", { staticClass: "pl-10" }, [
+            _c(
+              "a",
+              {
+                staticClass: "text-blue hover:text-blue-dark no-underline",
+                attrs: { href: "#about" },
+                on: {
+                  click: function($event) {
+                    _vm.smoothScrolling()
+                  }
+                }
+              },
+              [_vm._v("About")]
+            )
+          ]),
+          _vm._v(" "),
+          _vm._m(0),
+          _vm._v(" "),
+          _vm._m(1)
+        ]
+      )
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "nav",
-      { staticClass: "hidden lg:block", attrs: { id: "navbar" } },
-      [
-        _c(
-          "ul",
-          {
-            staticClass:
-              "list-reset flex justify-center items-center bg-blue-lightest uppercase tracking-wide font-semibold py-8 lg:text-md"
-          },
-          [
-            _c("li", { staticClass: "pl-10" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "text-blue hover:text-blue-dark no-underline",
-                  attrs: { href: "#about" }
-                },
-                [_vm._v("About")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "pl-10" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "text-blue hover:text-blue-dark no-underline",
-                  attrs: { href: "#board-members" }
-                },
-                [_vm._v("Board Members")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "pl-10" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "text-blue hover:text-blue-dark no-underline",
-                  attrs: { href: "#contact" }
-                },
-                [_vm._v("Contact")]
-              )
-            ])
-          ]
-        )
-      ]
-    )
+    return _c("li", { staticClass: "pl-10" }, [
+      _c(
+        "a",
+        {
+          staticClass: "text-blue hover:text-blue-dark no-underline",
+          attrs: { href: "#board-members" }
+        },
+        [_vm._v("Board Members")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "pl-10" }, [
+      _c(
+        "a",
+        {
+          staticClass: "text-blue hover:text-blue-dark no-underline",
+          attrs: { href: "#contact" }
+        },
+        [_vm._v("Contact")]
+      )
+    ])
   }
 ]
 render._withStripped = true
@@ -15930,35 +15948,47 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", { staticClass: "bg-grey-lightest py-16" }, [
-    _c("div", { staticClass: "max-w-xl m-auto px-10" }, [
-      _c("div", { staticClass: "-ml-10 flex flex-wrap flex-col md:flex-row" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _c("div", { staticClass: "flex flex-2 w-full pl-10 my-4" }, [
-          _c("div", { staticClass: "uk-card p-8 bg-grey-light shadow" }, [
-            _c("h6", { staticClass: "text-lg uppercase mb-4" }, [
-              _vm._v("About the " + _vm._s(_vm.association.acronym))
-            ]),
+  return _c(
+    "section",
+    { staticClass: "bg-grey-lightest py-16", attrs: { id: "about" } },
+    [
+      _c("div", { staticClass: "max-w-xl m-auto px-10" }, [
+        _c(
+          "div",
+          { staticClass: "-ml-10 flex flex-wrap flex-col md:flex-row" },
+          [
+            _vm._m(0),
             _vm._v(" "),
-            _c("h3", { staticClass: "text-3xl font-hairline" }, [
-              _vm._v("Our Mission")
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "mt-4 mb-8 font-light leading-normal" }, [
-              _vm._v(
-                "The " +
-                  _vm._s(_vm.association.fullName) +
-                  " consists of 60 sworn officers and civilian personnel whom have taken an oath to maintain law and order for our citizens, and represent the finest element of our community. We are dedicated to partnering with the community and providing quality police service through everyday encounters, emphasizing the highest degree of cooperation, professionalism and ethical behavior. Our role is to maintain " +
-                  _vm._s(_vm.association.address.city) +
-                  "'s safe and secure atmosphere, and our community policing approach helps keeps your neighborhood safe by working with our police officers daily."
-              )
+            _c("div", { staticClass: "flex flex-2 w-full pl-10 my-4" }, [
+              _c("div", { staticClass: "uk-card p-8 bg-grey-light shadow" }, [
+                _c("h6", { staticClass: "text-lg uppercase mb-4" }, [
+                  _vm._v("About the " + _vm._s(_vm.association.acronym))
+                ]),
+                _vm._v(" "),
+                _c("h3", { staticClass: "text-3xl font-hairline" }, [
+                  _vm._v("Our Mission")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "p",
+                  { staticClass: "mt-4 mb-8 font-light leading-normal" },
+                  [
+                    _vm._v(
+                      "The " +
+                        _vm._s(_vm.association.fullName) +
+                        " consists of 60 sworn officers and civilian personnel whom have taken an oath to maintain law and order for our citizens, and represent the finest element of our community. We are dedicated to partnering with the community and providing quality police service through everyday encounters, emphasizing the highest degree of cooperation, professionalism and ethical behavior. Our role is to maintain " +
+                        _vm._s(_vm.association.address.city) +
+                        "'s safe and secure atmosphere, and our community policing approach helps keeps your neighborhood safe by working with our police officers daily."
+                    )
+                  ]
+                )
+              ])
             ])
-          ])
-        ])
+          ]
+        )
       ])
-    ])
-  ])
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
