@@ -15501,7 +15501,7 @@ var render = function() {
       "div",
       {
         staticClass:
-          "w-full bg-blue-dark sm:bg-green-dark md:bg-orange-dark lg:bg-red-dark xl:bg-black  h-48 flex justify-center items-center text-white text-center px-10"
+          "w-full bg-grey-darkest h-48 flex justify-center items-center text-white text-center px-10"
       },
       [
         _vm._v("\n        Privacy Policy | Terms Of Service "),
@@ -16111,7 +16111,7 @@ var render = function() {
   return _c("section", { staticClass: "bg-grey-darkest py-16" }, [
     _c("div", { staticClass: "max-w-xl m-auto px-10" }, [
       _c("h1", { staticClass: "text-blue-lightest uppercase mb-4" }, [
-        _vm._v("Executive Board")
+        _vm._v(_vm._s(_vm.association.acronym) + " Executive Board")
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "-ml-10 flex flex-wrap" }, [
@@ -16134,9 +16134,11 @@ var render = function() {
                   }
                 }),
                 _vm._v(" "),
-                _c("h3", { staticClass: "text-2xl font-hairline" }, [
-                  _vm._v("President")
-                ]),
+                _c(
+                  "h3",
+                  { staticClass: "text-2xl font-hairline text-grey-darkest" },
+                  [_vm._v("President")]
+                ),
                 _c("br"),
                 _vm._v(" "),
                 _c("p", { staticClass: "uppercase font-bold" }, [
@@ -16199,14 +16201,16 @@ var render = function() {
                 _c("img", {
                   staticClass: "w-full rounded mb-4",
                   attrs: {
-                    src: "https://picsum.photos/200/200?image=1",
+                    src: "https://picsum.photos/200/200?image=10",
                     alt: "Executive Board vice-president"
                   }
                 }),
                 _vm._v(" "),
-                _c("h3", { staticClass: "text-2xl font-hairline" }, [
-                  _vm._v("Vice-President")
-                ]),
+                _c(
+                  "h3",
+                  { staticClass: "text-2xl font-hairline text-grey-darkest" },
+                  [_vm._v("Vice-President")]
+                ),
                 _c("br"),
                 _vm._v(" "),
                 _c("p", { staticClass: "uppercase font-bold" }, [
@@ -16269,14 +16273,16 @@ var render = function() {
                 _c("img", {
                   staticClass: "w-full rounded mb-4",
                   attrs: {
-                    src: "https://picsum.photos/200/200?image=2",
+                    src: "https://picsum.photos/200/200?image=20",
                     alt: "Executive Board treasurer"
                   }
                 }),
                 _vm._v(" "),
-                _c("h3", { staticClass: "text-2xl font-hairline" }, [
-                  _vm._v("Treasurer")
-                ]),
+                _c(
+                  "h3",
+                  { staticClass: "text-2xl font-hairline text-grey-darkest" },
+                  [_vm._v("Treasurer")]
+                ),
                 _c("br"),
                 _vm._v(" "),
                 _c("p", { staticClass: "uppercase font-bold" }, [
@@ -16339,14 +16345,16 @@ var render = function() {
                 _c("img", {
                   staticClass: "w-full rounded mb-4",
                   attrs: {
-                    src: "https://picsum.photos/200/200?image=3",
+                    src: "https://picsum.photos/200/200?image=30",
                     alt: "Executive Board secretary"
                   }
                 }),
                 _vm._v(" "),
-                _c("h3", { staticClass: "text-2xl font-hairline" }, [
-                  _vm._v("Secretary")
-                ]),
+                _c(
+                  "h3",
+                  { staticClass: "text-2xl font-hairline text-grey-darkest" },
+                  [_vm._v("Secretary")]
+                ),
                 _c("br"),
                 _vm._v(" "),
                 _c("p", { staticClass: "uppercase font-bold" }, [
@@ -16536,7 +16544,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("input", {
               staticClass:
-                "appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey",
+                "appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey",
               attrs: {
                 id: "grid-password",
                 type: "text",
@@ -16560,7 +16568,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("textarea", {
               staticClass:
-                "appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey",
+                "appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-grey",
               attrs: {
                 id: "grid-password",
                 type: "text",
