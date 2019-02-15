@@ -1,3 +1,3 @@
 <template>
-    <p>This is the homepage</p>
+    <div>This is from Home.vue</div>
 </template>
