@@ -2,12 +2,12 @@
 
 @section('body')
 
-@include('components/header')
-@include('components/navbar')
-@include('components/homepage-jumbotron')
-@include('components/about')
-@include('components/board')
-@include('components/contact')
-@include('components/footer')
+@include('components/_header')
+@include('components/_navbar')
+@include('components/_homepage-jumbotron')
+@include('components/_about')
+@include('components/_board')
+@include('components/_contact')
+@include('components/_footer')
 
 @endsection

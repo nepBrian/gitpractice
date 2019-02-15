@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('body')
-    @include('components/header')
+    @include('components/_header')
     <div class="container m-auto py-10">
         <h1>Privacy Policy</h1>
         <p><strong>What information do we collect?</strong></p>
@@ -41,5 +41,5 @@
         <p><strong>Privacy Policy Customer Pledge</strong></p>
         <p>We pledge to you, our customer, that we have made a dedicated effort to bring our privacy policy in line with the the following important privacy laws and initiatives:<br>Federal Trade Commision Fair<br>Massachusetts Online Privacy Protection Act<br>Privacy Alliance<br>Controlling the Assault of Non-Solicited Pornography and Marketing Act<br>Trust Guard Privacy Requirements</p>
     </div>
-    @include('components/footer')
+    @include('components/_footer')
 @endsection
