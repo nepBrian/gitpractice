@@ -1,10 +1,13 @@
 @extends('master')
 
 @section('body')
-  <header-component></header-component>
-  <homepage-jumbotron></homepage-jumbotron>
-  <about-component></about-component>
-  <board-component></board-component>
-  <contact-component></contact-component>
-  <footer-component></footer-component>
+
+@include('components/_header')
+@include('components/_navbar')
+@include('components/_homepage-jumbotron')
+@include('components/_about')
+@include('components/_board')
+@include('components/_contact')
+@include('components/_footer')
+
 @endsection

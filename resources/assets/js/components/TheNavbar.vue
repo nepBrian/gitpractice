@@ -1,18 +1,8 @@
 <template>
-  <nav id="navbar" class="hidden lg:block">
-    <ul class="list-reset flex justify-center items-center bg-blue-lightest uppercase tracking-wide font-semibold py-8 lg:text-md">
-      <!-- <li class="pl-10"><a class="text-blue hover:text-blue-dark no-underline" href="/">Home</a></li> -->
-      <li class="pl-10"><a v-on:click="smoothScrolling()" class="text-blue hover:text-blue-dark no-underline" href="#about">About</a></li>
-      <!-- <li class="pl-10"><a class="text-blue hover:text-blue-dark no-underline" href="#">News</a></li> -->
-      <li class="pl-10"><a class="text-blue hover:text-blue-dark no-underline" href="#board-members">Board Members</a></li>
-      <li class="pl-10"><a class="text-blue hover:text-blue-dark no-underline" href="#contact">Contact</a></li>
-      <!-- <li class="pl-10"><a class="text-blue hover:text-blue-dark no-underline" target="_blank" href="https://www.nepconnect.review/login">Login</a></li> -->
-    </ul>
-  </nav>
+
 </template>
 
 <script>
-    import { association } from '../data.json'
 
     export default {
         created () {
@@ -20,7 +10,6 @@
         },
         data() {
           return {
-            association: association
             // nav: nav,
             // topOfNav: topOfNav
           }
@@ -53,7 +42,7 @@
 </script>
 
 <style scoped>
-  /*  body.fixed-nav nav {
+   /* body.fixed-nav nav {
       position: fixed;
       box-shadow:0 5px 0 rgba(0,0,0,0.1);
     }
