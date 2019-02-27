@@ -16,9 +16,15 @@
 route::get('/', function () {
     return view('home');
 });
-route::get('/contact', function () {
-    return view('contact');
-});
 route::get('/components', function () {
     return view('components');
+});
+route::get('/privacy-policy', function () {
+    return view('privacypolicy');
+});
+route::get('/terms-of-service', function () {
+    return view('termsofservice');
+});
+route::get('/router', function () {
+    return view('router');
 });

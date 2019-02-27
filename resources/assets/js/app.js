@@ -18,7 +18,7 @@ const router = new VueRouter({
     mode: 'history',
     routes: [
         {
-            path: '/',
+            path: '/home',
             name: 'home',
             component: Home
         },
@@ -40,17 +40,17 @@ const router = new VueRouter({
  * These are global components - able to use anywhere and even within each other
  */
 
-Vue.component('header-component', require('./components/TheHeader.vue'));
-Vue.component('footer-component', require('./components/TheFooter.vue'));
-Vue.component('dropdown-link', require('./components/DropdownLink'));
-Vue.component('homepage-jumbotron', require('./components/HomepageJumbotron'));
-Vue.component('about-component', require('./components/TheAbout'));
-Vue.component('board-component', require('./components/TheBoard'));
-Vue.component('contact-component', require('./components/TheContact'));
-Vue.component('info-card', require('./components/InfoCard'));
+// Vue.component('header-component', require('./components/TheHeader.vue'));
+// Vue.component('footer-component', require('./components/TheFooter.vue'));
+// Vue.component('dropdown-link', require('./components/DropdownLink'));
+// Vue.component('homepage-jumbotron', require('./components/HomepageJumbotron'));
+// Vue.component('about-component', require('./components/TheAbout'));
+// Vue.component('board-component', require('./components/TheBoard'));
+// Vue.component('contact-component', require('./components/TheContact'));
+// Vue.component('info-card', require('./components/InfoCard'));
 
 const app = new Vue({
     el: '#app',
-    components: { App },
+    components: { App, Hello, Home },
     router,
 });
