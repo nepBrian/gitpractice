@@ -26,8 +26,8 @@ class ContactMessageController extends Controller
             $mail->from($request->email, $request->name);
 
             $mail->to('brian@nepwebsites.com')->subject('Contact Message');
-
-            return redirect()->back()->with('flash_message', 'Thank you for your message.');
         });
+
+        return redirect()->back()->with('flash_message', 'Thank you for your message.');
     }
 }
