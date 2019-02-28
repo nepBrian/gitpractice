@@ -28,3 +28,12 @@ route::get('/terms-of-service', function () {
 route::get('/router', function () {
     return view('router');
 });
+
+Route::get('/contact', [
+    'uses' => 'ContactMessageController@create'
+]);
+
+Route::post('/contact', [
+    'uses' => 'ContactMessageController@store',
+    'as' => 'contact.store'
+]);
